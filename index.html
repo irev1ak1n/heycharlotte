@@ -33,6 +33,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/core/global.css">
     <link rel="stylesheet" href="assets/css/index.css">
@@ -45,11 +46,17 @@
 <div class="scroll-progress" aria-hidden="true"><span class="scroll-progress__bar" id="scrollProgressBar"></span></div>
 
 <section class="hero">
-    <video id="heroVideo" class="hero-video" autoplay muted loop playsinline poster="assets/img/homepage1.jpg">
+    <video id="heroVideoA" class="hero-video is-active" autoplay muted playsinline poster="assets/img/homepage1.jpg">
         <source src="assets/img/clt.mp4" type="video/mp4">
     </video>
 
+    <video id="heroVideoB" class="hero-video" muted playsinline preload="auto">
+        <source src="assets/img/clt3.mp4" type="video/mp4">
+    </video>
+
     <div id="siteNav"></div>
+
+    <div class="hero-lyrics" id="heroLyrics" aria-hidden="true"></div>
 
     <div class="hero-controls">
         <button class="hero-ctrl" id="soundToggle" type="button" aria-label="Toggle sound" aria-pressed="false">
@@ -91,6 +98,7 @@
 <script src="assets/js/core/includes.nav.js" defer></script>
 <script src="assets/js/hero-video.js" defer></script>
 <script src="assets/js/hero-scroll.js" defer></script>
+<script src="assets/js/hero-lyrics.js" defer></script>
 
 </body>
 </html>
