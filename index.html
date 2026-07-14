@@ -35,23 +35,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/core/global.css">
-    <link rel="stylesheet" href="assets/css/index.css">
-    <link rel="stylesheet" href="assets/css/nav.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/core/global.css">
+    <link rel="stylesheet" href="/assets/css/loader.css?v=2">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/things.css">
+    <link rel="stylesheet" href="/assets/css/home.css">
+    <link rel="stylesheet" href="/assets/css/cuisines.css">
+    <link rel="stylesheet" href="/assets/css/explore-cta.css">
+    <link rel="stylesheet" href="/assets/css/nav.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/theme.css">
 </head>
 
 <body>
 
+<div class="site-loader" id="siteLoader" style="--loader-img:url('/assets/img/loader.png')">
+    <div class="loader-bg" aria-hidden="true"></div>
+    <div class="loader-veil" aria-hidden="true"></div>
+    <div class="loader-title">Hey Charlotte</div>
+    <div class="loader-bar"><span id="loaderBarFill"></span></div>
+    <div class="loader-status">Streaming the city &middot; <span id="loaderPct">0</span>%</div>
+</div>
+<script src="/assets/js/loader.js?v=2"></script>
+
 <div class="scroll-progress" aria-hidden="true"><span class="scroll-progress__bar" id="scrollProgressBar"></span></div>
 
 <section class="hero">
-    <video id="heroVideoA" class="hero-video is-active" autoplay muted playsinline poster="assets/img/homepage1.jpg">
-        <source src="assets/img/clt.mp4" type="video/mp4">
+    <video id="heroVideoA" class="hero-video is-active" muted playsinline preload="auto" poster="assets/img/last-vid-frame.jpg">
+        <source src="/assets/img/clt.mp4" type="video/mp4">
     </video>
-
     <video id="heroVideoB" class="hero-video" muted playsinline preload="auto">
-        <source src="assets/img/clt3.mp4" type="video/mp4">
+        <source src="/assets/img/clt3.mp4" type="video/mp4">
     </video>
 
     <div id="siteNav"></div>
@@ -92,13 +106,249 @@
     </button>
 </section>
 
+<section class="services" id="services" aria-label="Quick links">
+    <div class="services-inner">
+        <div class="services-grid" data-reveal-group>
+            <a class="service-card" href="pages/home/new-to-charlotte.html">
+                <span class="service-media" style="--svc-img:url('/assets/img/home/new-to-charlotte.jpg'); --svc-fallback:linear-gradient(160deg, #12244e, #000 78%)"></span>
+                <span class="service-tag">New in Town</span>
+                <div class="service-body">
+                    <h3>New to Charlotte? Start your first month here.</h3>
+                    <span class="service-go">Get Started
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                </div>
+            </a>
+            <a class="service-card" href="pages/home/visiting.html">
+                <span class="service-media" style="--svc-img:url('/assets/img/home/tour.jpg'); --svc-fallback:linear-gradient(160deg, #123a4e, #000 78%)"></span>
+                <span class="service-tag">Explore</span>
+                <div class="service-body">
+                    <h3>Plan the perfect day out in the Queen City.</h3>
+                    <span class="service-go">Plan a Tour
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                </div>
+            </a>
+            <a class="service-card" href="pages/home/jobs.html">
+                <span class="service-media" style="--svc-img:url('/assets/img/home/job.png'); --svc-fallback:linear-gradient(160deg, #124e2c, #000 78%)"></span>
+                <span class="service-tag">Work</span>
+                <div class="service-body">
+                    <h3>Discover local jobs and career opportunities.</h3>
+                    <span class="service-go">Find Work
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                </div>
+            </a>
+            <a class="service-card" href="pages/home/students.html">
+                <span class="service-media" style="--svc-img:url('/assets/img/home/students2.jpg'); --svc-fallback:linear-gradient(160deg, #124e2c, #000 78%)"></span>
+                <span class="service-tag">Students</span>
+                <div class="service-body">
+                    <h3>Student essentials, from scholarships to internships.</h3>
+                    <span class="service-go">Student Life
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                </div>
+            </a>
+            <a class="service-card" href="pages/home/family-fun.html">
+                <span class="service-media" style="--svc-img:url('/assets/img/home/family-fun.jpg'); --svc-fallback:linear-gradient(160deg, #124e2c, #000 78%)"></span>
+                <span class="service-tag">Family Fun</span>
+                <div class="service-body">
+                    <h3>Fun for every age, all in one place.</h3>
+                    <span class="service-go">SEE WHAT'S HAPPENING
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="things" id="thingsToDo" aria-labelledby="thingsTitle">
+    <div class="things-inner">
+        <div class="things-head things-head--center" data-reveal>
+            <div class="things-titlewrap">
+                <h2 class="things-title" id="thingsTitle">The City's Best, All In One Place</h2>
+            </div>
+        </div>
+        <div class="things-bar" data-reveal>
+            <a class="things-seeall" href="pages/explore.html">
+                <span>See All</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+        </div>
+
+        <div class="things-grid" data-reveal-group>
+            <a class="things-card things-card--sm" href="pages/things-to-do.html" style="--card-accent:#FF1493; --card-fallback:linear-gradient(160deg, #3a1240, #07060D 75%)">
+                <span class="things-media" style="--card-img:url('/assets/img/things/carowinds.jpg')"></span>
+                <span class="things-cat">After Dark</span>
+                <div class="things-card-body">
+                    <h3>Carowinds Nights</h3>
+                </div>
+            </a>
+            <a class="things-card things-card--sm" href="pages/things-to-do.html" style="--card-accent:#FFC400; --card-fallback:linear-gradient(160deg, #4e2a12, #07060D 75%)">
+                <span class="things-media" style="--card-img:url('/assets/img/things/south-park.jpg')"></span>
+                <span class="things-cat">Shopping</span>
+                <div class="things-card-body">
+                    <h3>A Guide to SouthPark</h3>
+                </div>
+            </a>
+
+            <a class="things-card things-card--feature" href="pages/things-to-do.html" style="--card-accent:#00F5FF; --card-fallback:linear-gradient(160deg, #12244e, #07060D 75%)">
+                <span class="things-media" style="--card-img:url('/assets/img/things/50-things-to-do-summer.png')"></span>
+                <span class="things-cat">Things to Do</span>
+                <div class="things-card-body">
+                    <h3>45 of the Hottest Things to Do This Summer</h3>
+                </div>
+            </a>
+
+            <a class="things-card things-card--sm" href="pages/parks-outdoors.html" style="--card-accent:#00FFD5; --card-fallback:linear-gradient(160deg, #123a4e, #07060D 75%)">
+                <span class="things-media" style="--card-img:url('/assets/img/things/whitewater.jpg')"></span>
+                <span class="things-cat">Outdoors</span>
+                <div class="things-card-body">
+                    <h3>Experience the Whitewater Center</h3>
+                </div>
+            </a>
+            <a class="things-card things-card--sm" href="pages/sports-entertainment.html" style="--card-accent:#FF6A00; --card-fallback:linear-gradient(160deg, #4e1212, #07060D 75%)">
+                <span class="things-media" style="--card-img:url('/assets/img/things/nascar.png')"></span>
+                <span class="things-cat">Racing</span>
+                <div class="things-card-body">
+                    <h3>A Day at the Speedway</h3>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="explore-cta" aria-labelledby="exploreCtaTitle">
+    <div class="explore-cta__bg" aria-hidden="true"></div>
+    <div class="explore-cta__inner" data-reveal>
+        <p class="explore-cta__eyebrow">The Full List</p>
+        <h2 id="exploreCtaTitle">Explore Everything Charlotte Has To Offer</h2>
+        <a class="explore-cta__btn" href="pages/explore.html">
+            Explore All
+        </a>
+    </div>
+</section>
+
+<section class="cuisines" id="cuisines" aria-labelledby="cuisinesTitle">
+    <div class="cuisines-inner">
+        <div class="cuisines-head" data-reveal>
+            <p class="cuisines-eyebrow">Taste The City</p>
+            <h2 class="cuisines-title" id="cuisinesTitle">A World of Flavor</h2>
+        </div>
+
+        <div class="cuisines-stack">
+            <a class="cuisine-card" href="pages/places-to-eat.html?cuisine=italian" style="--cz-fallback:linear-gradient(160deg, #6b2f14, #0a0a0a 80%)">
+                <span class="cuisine-media" style="--cz-img:url('/assets/img/cuisines/italian.jpg')"></span>
+                <div class="cuisine-body">
+                    <span class="cuisine-num">01</span>
+                    <h3>Italian</h3>
+                    <span class="cuisine-go">Explore <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </div>
+            </a>
+            <a class="cuisine-card" href="pages/places-to-eat.html?cuisine=mexican-latin" style="--cz-fallback:linear-gradient(160deg, #4e3a12, #0a0a0a 80%)">
+                <span class="cuisine-media" style="--cz-img:url('/assets/img/cuisines/mexican.jpg')"></span>
+                <div class="cuisine-body">
+                    <span class="cuisine-num">02</span>
+                    <h3>Mexican & Latin</h3>
+                    <span class="cuisine-go">Explore <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </div>
+            </a>
+            <a class="cuisine-card" href="pages/places-to-eat.html?cuisine=eastern-european" style="--cz-fallback:linear-gradient(160deg, #4e2412, #0a0a0a 80%)">
+                <span class="cuisine-media" style="--cz-img:url('/assets/img/cuisines/russian.jpg')"></span>
+                <div class="cuisine-body">
+                    <span class="cuisine-num">03</span>
+                    <h3>BBQ & Southern</h3>
+                    <span class="cuisine-go">Explore <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </div>
+            </a>
+            <a class="cuisine-card" href="pages/places-to-eat.html?cuisine=american" style="--cz-fallback:linear-gradient(160deg, #2f2f2f, #0a0a0a 80%)">
+                <span class="cuisine-media" style="--cz-img:url('/assets/img/cuisines/bar.jpg')"></span>
+                <div class="cuisine-body">
+                    <span class="cuisine-num">04</span>
+                    <h3>Bars & Pubs</h3>
+                    <span class="cuisine-go">Explore <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </div>
+            </a>
+            <a class="cuisine-card" href="pages/places-to-eat.html?cuisine=asian" style="--cz-fallback:linear-gradient(160deg, #14324e, #0a0a0a 80%)">
+                <span class="cuisine-media" style="--cz-img:url('/assets/img/cuisines/date-night.png')"></span>
+                <div class="cuisine-body">
+                    <span class="cuisine-num">05</span>
+                    <h3>Date Night Spots</h3>
+                    <span class="cuisine-go">Explore <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!--<section class="events" id="featuredEvents" aria-labelledby="eventsTitle">-->
+<!--    <div class="events-inner">-->
+<!--        <div class="events-head" data-reveal>-->
+<!--            <h2 class="events-title" id="eventsTitle">Featured Events</h2>-->
+<!--        </div>-->
+<!--        <div class="events-rule" aria-hidden="true" data-reveal></div>-->
+
+<!--        <div class="events-grid" data-reveal-group>-->
+<!--            <a class="event-card" href="pages/events.html">-->
+<!--                <span class="event-date"><strong>JUL</strong><span>Weekends</span></span>-->
+<!--                <div class="event-body">-->
+<!--                    <h3>River Jam</h3>-->
+<!--                    <p>Free outdoor concerts on the river all summer long, with food trucks and sunset paddling.</p>-->
+<!--                </div>-->
+<!--            </a>-->
+<!--            <a class="event-card" href="pages/events.html">-->
+<!--                <span class="event-date"><strong>AUG</strong><span>16–17</span></span>-->
+<!--                <div class="event-body">-->
+<!--                    <h3>Charlotte Pride Festival &amp; Parade</h3>-->
+<!--                    <p>One of the Southeast's largest pride celebrations takes over Uptown with two days of music and community.</p>-->
+<!--                </div>-->
+<!--            </a>-->
+<!--            <a class="event-card" href="pages/events.html">-->
+<!--                <span class="event-date"><strong>SEP</strong><span>4–7</span></span>-->
+<!--                <div class="event-body">-->
+<!--                    <h3>Yiasou Greek Festival</h3>-->
+<!--                    <p>A Labor Day weekend tradition of Greek food, dancing, and music at Holy Trinity Cathedral.</p>-->
+<!--                </div>-->
+<!--            </a>-->
+<!--            <a class="event-card" href="pages/events.html">-->
+<!--                <span class="event-date"><strong>SEP</strong><span>18–20</span></span>-->
+<!--                <div class="event-body">-->
+<!--                    <h3>Festival In The Park</h3>-->
+<!--                    <p>Local artists, makers, and live performances fill Freedom Park for one of the city's oldest festivals.</p>-->
+<!--                </div>-->
+<!--            </a>-->
+<!--            <a class="event-card" href="pages/events.html">-->
+<!--                <span class="event-date"><strong>OCT</strong><span>11</span></span>-->
+<!--                <div class="event-body">-->
+<!--                    <h3>Bank Of America Roval 400</h3>-->
+<!--                    <p>NASCAR playoff weekend on the Roval — road course meets oval at Charlotte Motor Speedway.</p>-->
+<!--                </div>-->
+<!--            </a>-->
+<!--            <a class="event-card" href="pages/events.html">-->
+<!--                <span class="event-date"><strong>OCT</strong><span>Weekends</span></span>-->
+<!--                <div class="event-body">-->
+<!--                    <h3>Carolina Renaissance Festival</h3>-->
+<!--                    <p>Jousting, turkey legs, and a 16th-century village return for weekends through late November.</p>-->
+<!--                </div>-->
+<!--            </a>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
 <div id="siteFooter"></div>
 
-<script src="assets/js/core/includes.footer.js" defer></script>
-<script src="assets/js/core/includes.nav.js" defer></script>
-<script src="assets/js/hero-video.js" defer></script>
-<script src="assets/js/hero-scroll.js" defer></script>
-<script src="assets/js/hero-lyrics.js" defer></script>
+<button class="to-top" id="toTop" type="button" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script src="/assets/js/core/includes.footer.js" defer></script>
+<script src="/assets/js/core/includes.nav.js" defer></script>
+<script src="/assets/js/hero/hero-video.js" defer></script>
+<script src="/assets/js/hero/hero-scroll.js" defer></script>
+<script src="/assets/js/hero/hero-lyrics.js" defer></script>
+<script src="/assets/js/home.js" defer></script>
+<script src="/assets/js/theme.js" defer></script>
 
 </body>
 </html>

@@ -12,7 +12,7 @@
     position:absolute;
     inset:-24px;
     z-index:0;
-    background:url("../img/bg1.jpg") center/cover no-repeat;
+    background:url("../img/bg3.jpg") center/cover no-repeat;
     filter:blur(5px) saturate(1.05);
     transform:scale(1.04);
     opacity:.64;
@@ -28,37 +28,6 @@
             linear-gradient(180deg, rgba(6,3,12,.68) 0%, rgba(8,5,16,.55) 45%, rgba(5,3,11,.82) 100%),
             radial-gradient(1100px 460px at 15% 0%, rgba(168,85,247,.16), transparent 60%),
             radial-gradient(1000px 480px at 88% 100%, rgba(90,169,255,.12), transparent 62%);
-}
-
-@property --footerBeam{
-    syntax: "<angle>";
-    inherits: false;
-    initial-value: 0deg;
-}
-
-.footer-frame{
-    position:absolute;
-    inset:0;
-    z-index:3;
-    pointer-events:none;
-    padding:2px;
-    background:conic-gradient(from var(--footerBeam),
-    transparent 0deg,
-    transparent 250deg,
-    #3fd0e0 272deg,
-    #5aa9ff 288deg,
-    #a855f7 304deg,
-    #ff5f9e 320deg,
-    #ff8a3d 336deg,
-    transparent 360deg);
-    -webkit-mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-    -webkit-mask-composite:xor;
-    mask-composite:exclude;
-    animation:footerBeam 6s linear infinite;
-}
-
-@keyframes footerBeam{
-    to{ --footerBeam: 360deg; }
 }
 
 .hub-card{
@@ -141,56 +110,42 @@
 }
 
 .footer-brand strong{
-    display:block;
+    display:inline-block;
+    transform-origin:left center;
     font-family:"Bree Serif", Georgia, serif;
     font-weight:400;
     font-size:30px;
     line-height:1.12;
     letter-spacing:.5px;
-    background:linear-gradient(90deg,
-    #ffffff 0%, #ffffff 38%,
-    #3fd0e0 45%, #5aa9ff 49%, #a855f7 53%, #ff5f9e 57%, #ff8a3d 61%,
-    #ffffff 68%, #ffffff 100%);
-    background-size:300% 100%;
-    -webkit-background-clip:text;
-    background-clip:text;
-    -webkit-text-fill-color:transparent;
-    color:transparent;
-    filter:drop-shadow(0 0 16px rgba(120,150,255,.32));
-    animation:brandWave 4.5s linear infinite;
+    color:#FDFBFE;
+    text-shadow:0 0 18px rgba(240,168,104,.55);
+    animation:brandPulse 3.6s ease-in-out infinite;
 }
 
 .footer-brand span{
-    display:block;
+    display:inline-block;
+    transform-origin:left center;
     margin-top:8px;
     font-size:13px;
     font-weight:800;
     letter-spacing:.16em;
     text-transform:uppercase;
-    background:linear-gradient(90deg,
-    #ffffff 0%, #ffffff 38%,
-    #3fd0e0 45%, #5aa9ff 49%, #a855f7 53%, #ff5f9e 57%, #ff8a3d 61%,
-    #ffffff 68%, #ffffff 100%);
-    background-size:300% 100%;
-    -webkit-background-clip:text;
-    background-clip:text;
-    -webkit-text-fill-color:transparent;
-    color:transparent;
-    filter:drop-shadow(0 0 12px rgba(120,150,255,.28));
-    animation:brandWave 4.5s linear infinite;
-    animation-delay:-2s;
+    color:#FDFBFE;
+    text-shadow:0 0 14px rgba(240,168,104,.5);
+    animation:brandPulse 3.6s ease-in-out infinite;
+    animation-delay:-1.8s;
 }
 
-@keyframes brandWave{
-    from{ background-position:100% 0; }
-    to{ background-position:0% 0; }
+@keyframes brandPulse{
+    0%, 100%{ transform:scale(1); text-shadow:0 0 12px rgba(240,168,104,.4); }
+    50%{ transform:scale(1.04); text-shadow:0 0 22px rgba(240,168,104,.7); }
 }
 
 @media (prefers-reduced-motion: reduce){
     .footer-brand strong,
     .footer-brand span{
         animation:none;
-        background-position:50% 0;
+        transform:none;
     }
 }
 
@@ -338,12 +293,5 @@
     .footer-links{
         grid-template-columns: 1fr;
         gap: 26px;
-    }
-}
-
-@media (prefers-reduced-motion: reduce){
-    .footer-frame{
-        animation: none;
-        background: conic-gradient(from 0deg, #3fd0e0, #5aa9ff, #a855f7, #ff5f9e, #ff8a3d, #3fd0e0);
     }
 }

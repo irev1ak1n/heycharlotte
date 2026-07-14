@@ -1,450 +1,159 @@
-// resources.js
+(function(){
+    var grid = document.getElementById('rxResults');
+    var searchInput = document.getElementById('rxSearch');
+    var clearBtn = document.getElementById('rxClear');
+    var sortSelect = document.getElementById('rxSort');
+    var chipsWrap = document.getElementById('rxChips');
+    var emptyState = document.getElementById('rxEmpty');
+    var resetBtn = document.getElementById('rxReset');
+    var countTotal = document.getElementById('rxTotal');
+    var countCats = document.getElementById('rxCatCount');
+    if(!grid){ return; }
 
-console.log("RESOURCES.JS LOADED");
+    var DATA = [];
+    var CATS = [];
+    var state = { q: '', cat: 'all', sort: 'category' };
 
-const listEl = document.getElementById("resourceList");
-const statusEl = document.getElementById("resourceStatus");
-const searchEl = document.getElementById("resourceSearch");
+    var linkIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+    var pinIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="10" r="2.4" fill="none" stroke="currentColor" stroke-width="1.7"/></svg>';
 
-const sortEl = document.getElementById("sortSelect");
-const clearEl = document.getElementById("clearFilters");
-
-const catWrap = document.getElementById("categoryList");
-
-const viewListBtn = document.getElementById("viewList");
-const viewGridBtn = document.getElementById("viewGrid");
-
-const norm = (s) =>
-    (s || "")
-        .toLowerCase()
-        .replace(/&/g, "and")
-        .replace(/\s+/g, " ")
-        .trim();
-
-let allResources = [];
-let filters = {
-    category: "",
-    cities: new Set(),
-    neighborhoods: new Set()
-};
-
-if (!listEl || !statusEl) {
-    console.log("No directory elements found. Exiting.");
-} else {
-    function setStatus(msg) {
-        statusEl.textContent = msg;
-    }
-
-    function getQueryParam(name) {
-        const url = new URL(window.location.href);
-        return (url.searchParams.get(name) || "").trim();
-    }
-
-    const CAT_MAP = {
-        education: "Education & Learning",
-        crisis: "Crisis Support",
-        jobs: "Employment & Job Training",
-        health: "Health Support",
-        food: "Basic Needs Assistance",
-        housing: "Housing & Shelters",
-
-        disability: "Disability Support",
-        family: "Family Services",
-        environment: "Environmental Assistance",
-    };
-
-
-    async function loadResources() {
-        const url = new URL("../data/resources.json", window.location.href);
-        const res = await fetch(url, { cache: "no-store" });
-        if (!res.ok) throw new Error(`HTTP ${res.status} loading ${url}`);
-        return res.json();
-    }
-
-    function getName(r) {
-        return (r?.name ?? r?.title ?? "Unnamed resource").toString();
-    }
-
-    function getCategory(r) {
-        return (r?.category ?? r?.type ?? "Uncategorized").toString();
-    }
-
-    function getDescription(r) {
-        return (r?.description ?? r?.desc ?? r?.summary ?? "").toString();
-    }
-
-    function getCity(r) {
-        return (r?.city ?? r?.location?.city ?? "").toString().trim();
-    }
-
-    function getNeighborhood(r) {
-        return (r?.neighborhood ?? r?.location?.neighborhood ?? "").toString().trim();
-    }
-
-    function getWebsite(r) {
-        return (r?.website ?? r?.url ?? r?.link ?? "").toString().trim();
-    }
-
-    function getPhone(r) {
-        return (r?.phone ?? r?.tel ?? r?.telephone ?? "").toString().trim();
-    }
-
-    function escapeHtml(str) {
-        return String(str)
-            .replaceAll("&", "&amp;")
-            .replaceAll("<", "&lt;")
-            .replaceAll(">", "&gt;")
-            .replaceAll('"', "&quot;")
-            .replaceAll("'", "&#039;");
-    }
-
-    function escapeAttr(str) {
-        return escapeHtml(str).replaceAll("`", "&#096;");
-    }
-
-    function safeUrl(url) {
-        const u = (url || "").trim();
-        if (!u) return "";
-        if (/^https?:\/\//i.test(u)) return u;
-        if (/^www\./i.test(u)) return `https://${u}`;
-        return u;
-    }
-
-    function prettyUrl(url) {
-        try {
-            const u = new URL(url);
-            return u.hostname.replace(/^www\./, "");
-        } catch {
-            return url.replace(/^https?:\/\//i, "").replace(/^www\./i, "");
-        }
-    }
-
-    function applySort(resources) {
-        const mode = (sortEl?.value || "name-asc").toLowerCase();
-        const sorted = [...resources];
-
-        sorted.sort((a, b) => {
-            const nameA = getName(a).toLowerCase();
-            const nameB = getName(b).toLowerCase();
-            const catA = getCategory(a).toLowerCase();
-            const catB = getCategory(b).toLowerCase();
-
-            switch (mode) {
-                case "name-desc":
-                    return nameB.localeCompare(nameA);
-                case "category-asc":
-                    return catA.localeCompare(catB) || nameA.localeCompare(nameB);
-                case "category-desc":
-                    return catB.localeCompare(catA) || nameA.localeCompare(nameB);
-                case "name-asc":
-                default:
-                    return nameA.localeCompare(nameB);
-            }
+    function esc(s){
+        return String(s).replace(/[&<>"]/g, function(c){
+            return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c];
         });
-
-        return sorted;
     }
 
-    function render(resources) {
-        listEl.innerHTML = "";
+    function hostname(url){
+        try{ return url.replace(/^https?:\/\//,'').replace(/^www\./,'').split('/')[0]; }
+        catch(e){ return 'Visit site'; }
+    }
 
-        if (!resources.length) {
-            listEl.innerHTML = `<li style="opacity:.8;">No resources found.</li>`;
+    function cardHTML(item){
+        var addr = item.address
+            ? '<span class="rx-card-addr">' + pinIcon + '<span>' + esc(item.address) + '</span></span>'
+            : '<span class="rx-card-addr">' + pinIcon + '<span>Charlotte, NC</span></span>';
+        var quote = item.quote ? '<p class="rx-card-quote">' + esc(item.quote) + '</p>' : '';
+        return '<article class="rx-card">'
+            + quote
+            + '<h3>' + esc(item.name) + '</h3>'
+            + '<p>' + esc(item.description) + '</p>'
+            + '<div class="rx-card-foot">'
+            + addr
+            + '<a class="rx-card-link" href="' + esc(item.website) + '" target="_blank" rel="noopener">Visit ' + linkIcon + '</a>'
+            + '</div></article>';
+    }
+
+    function filtered(){
+        var q = state.q.trim().toLowerCase();
+        return DATA.filter(function(item){
+            if(state.cat !== 'all' && item.category !== state.cat){ return false; }
+            if(!q){ return true; }
+            return (item.name + ' ' + item.description + ' ' + item.category + ' ' + (item.quote||'')).toLowerCase().indexOf(q) !== -1;
+        });
+    }
+
+    function render(){
+        var items = filtered();
+
+        if(state.sort === 'az'){
+            items = items.slice().sort(function(a,b){ return a.name.localeCompare(b.name); });
+        } else if(state.sort === 'za'){
+            items = items.slice().sort(function(a,b){ return b.name.localeCompare(a.name); });
+        }
+
+        if(!items.length){
+            grid.innerHTML = '';
+            emptyState.classList.add('show');
             return;
         }
+        emptyState.classList.remove('show');
 
-        resources.forEach(r => {
-            const li = document.createElement("li");
-
-            const name = getName(r);
-            const category = getCategory(r);
-            const desc = getDescription(r);
-            const city = getCity(r);
-            const nb = getNeighborhood(r);
-            const urlRaw = getWebsite(r);
-            const url = safeUrl(urlRaw);
-            const phone = getPhone(r);
-
-            const locParts = [nb, city].filter(Boolean);
-            const locationLine = locParts.length ? locParts.join(" • ") : "";
-
-            const descSafe = escapeHtml(desc || "");
-            const hasDesc = Boolean(desc && desc.trim());
-
-            const websiteHtml = url
-                ? `<a class="dir-link" href="${escapeAttr(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(prettyUrl(url))}</a>`
-                : "";
-
-            const phoneHtml = phone
-                ? `<a class="dir-link" href="tel:${escapeAttr(phone.replace(/[^\d+]/g, ""))}">${escapeHtml(phone)}</a>`
-                : "";
-
-            const metaBits = [locationLine, phoneHtml, websiteHtml].filter(Boolean);
-
-            li.innerHTML = `
-        <div class="dir-card-title">${escapeHtml(name)}</div>
-        <div class="dir-card-sub">${escapeHtml(category)}</div>
-        ${hasDesc ? `<div class="dir-card-desc">${descSafe}</div>` : ``}
-        ${metaBits.length ? `<div class="dir-card-meta">${metaBits.join('<span class="dir-dot">•</span>')}</div>` : ``}
-      `;
-
-            listEl.appendChild(li);
-        });
-    }
-
-    function buildCounts(resources, getter) {
-        const m = new Map();
-        resources.forEach(r => {
-            const v = (getter(r) || "").trim();
-            if (!v) return;
-            m.set(v, (m.get(v) || 0) + 1);
-        });
-        return [...m.entries()].sort((a, b) => a[0].localeCompare(b[0]));
-    }
-
-    function buildCountsCategory(resources) {
-        const m = new Map();
-        resources.forEach(r => {
-            const v = getCategory(r).trim();
-            if (!v) return;
-            m.set(v, (m.get(v) || 0) + 1);
-        });
-        return [...m.entries()].sort((a, b) => a[0].localeCompare(b[0]));
-    }
-
-    function renderSidebar(resources) {
-        if (!catWrap) return;
-
-        const catCounts = buildCountsCategory(resources);
-        const cityCounts = buildCounts(resources, getCity);
-        const nbCounts = buildCounts(resources, getNeighborhood);
-
-        const hasCities = cityCounts.length > 0;
-        const hasNbs = nbCounts.length > 0;
-
-        catWrap.innerHTML = `
-      <div class="dir-fgroup">
-        <div class="dir-fgroup-title">Category</div>
-        <div class="dir-cats">
-          ${catCounts
-            .map(([name, count]) => {
-                const active = filters.category.toLowerCase() === name.toLowerCase() ? "is-active" : "";
-                return `
-                <button class="dir-chip ${active}" type="button" data-filter="category" data-value="${escapeAttr(name)}">
-                  <span class="dir-chip-name">${escapeHtml(name)}</span>
-                  <span class="dir-chip-count">${count}</span>
-                </button>
-              `;
-            })
-            .join("")}
-        </div>
-      </div>
-
-      ${hasCities ? `
-        <div class="dir-fgroup">
-          <div class="dir-fgroup-title">City</div>
-          <div class="dir-checks">
-            ${cityCounts
-            .map(([name, count]) => {
-                const key = name.toLowerCase();
-                const checked = filters.cities.has(key) ? "checked" : "";
-                return `
-                  <label class="dir-check">
-                    <span class="dir-check-left">
-                      <input type="checkbox" data-filter="city" value="${escapeAttr(name)}" ${checked} />
-                      <span>${escapeHtml(name)}</span>
-                    </span>
-                    <span class="dir-chip-count">${count}</span>
-                  </label>
-                `;
-            })
-            .join("")}
-          </div>
-        </div>
-      ` : ""}
-
-      ${hasNbs ? `
-        <div class="dir-fgroup">
-          <div class="dir-fgroup-title">Neighborhood</div>
-          <div class="dir-checks">
-            ${nbCounts
-            .map(([name, count]) => {
-                const key = name.toLowerCase();
-                const checked = filters.neighborhoods.has(key) ? "checked" : "";
-                return `
-                  <label class="dir-check">
-                    <span class="dir-check-left">
-                      <input type="checkbox" data-filter="neighborhood" value="${escapeAttr(name)}" ${checked} />
-                      <span>${escapeHtml(name)}</span>
-                    </span>
-                    <span class="dir-chip-count">${count}</span>
-                  </label>
-                `;
-            })
-            .join("")}
-          </div>
-        </div>
-      ` : ""}
-    `;
-
-        catWrap.querySelectorAll('button[data-filter="category"]').forEach(btn => {
-            btn.addEventListener("click", () => {
-                const val = btn.getAttribute("data-value") || "";
-                filters.category = (filters.category && filters.category.toLowerCase() === val.toLowerCase()) ? "" : val;
-                applyFilters();
-                renderSidebar(allResources);
+        var html = '';
+        if(state.sort === 'category'){
+            CATS.forEach(function(cat){
+                var group = items.filter(function(i){ return i.category === cat; });
+                if(!group.length){ return; }
+                html += '<section class="rx-section">'
+                    + '<div class="rx-section-head"><h2>' + esc(cat) + '</h2>'
+                    + '<span class="rx-section-count">' + group.length + (group.length === 1 ? ' resource' : ' resources') + '</span></div>'
+                    + '<div class="rx-grid">' + group.map(cardHTML).join('') + '</div></section>';
             });
-        });
+        } else {
+            html = '<section class="rx-section"><div class="rx-grid">'
+                + items.map(cardHTML).join('') + '</div></section>';
+        }
+        grid.innerHTML = html;
+    }
 
-        catWrap.querySelectorAll('input[type="checkbox"][data-filter="city"]').forEach(cb => {
-            cb.addEventListener("change", () => {
-                const v = (cb.value || "").trim().toLowerCase();
-                if (!v) return;
-                if (cb.checked) filters.cities.add(v);
-                else filters.cities.delete(v);
-                applyFilters();
-            });
+    function buildChips(){
+        var counts = {};
+        DATA.forEach(function(i){ counts[i.category] = (counts[i.category]||0) + 1; });
+        var html = '<button class="rx-chip is-active" data-cat="all">All <span>' + DATA.length + '</span></button>';
+        CATS.forEach(function(cat){
+            html += '<button class="rx-chip" data-cat="' + esc(cat) + '">' + esc(cat) + ' <span>' + counts[cat] + '</span></button>';
         });
+        chipsWrap.innerHTML = html;
 
-        catWrap.querySelectorAll('input[type="checkbox"][data-filter="neighborhood"]').forEach(cb => {
-            cb.addEventListener("change", () => {
-                const v = (cb.value || "").trim().toLowerCase();
-                if (!v) return;
-                if (cb.checked) filters.neighborhoods.add(v);
-                else filters.neighborhoods.delete(v);
-                applyFilters();
+        chipsWrap.querySelectorAll('.rx-chip').forEach(function(chip){
+            chip.addEventListener('click', function(){
+                state.cat = chip.getAttribute('data-cat');
+                chipsWrap.querySelectorAll('.rx-chip').forEach(function(c){ c.classList.remove('is-active'); });
+                chip.classList.add('is-active');
+                render();
             });
         });
     }
 
-    function applyFilters() {
-        const q = (searchEl?.value || "").trim().toLowerCase();
-        const cat = (filters.category || "").trim().toLowerCase();
+    function init(list){
+        DATA = list;
+        var seen = {};
+        DATA.forEach(function(i){ if(!seen[i.category]){ seen[i.category] = true; CATS.push(i.category); } });
+        CATS.sort();
 
-        const filtered = allResources.filter(r => {
-            const name = getName(r).toLowerCase();
-            const category = getCategory(r).toLowerCase();
-            const desc = getDescription(r).toLowerCase();
-            const city = getCity(r).toLowerCase();
-            const nb = getNeighborhood(r).toLowerCase();
+        if(countTotal){ countTotal.textContent = DATA.length; }
+        if(countCats){ countCats.textContent = CATS.length; }
 
-            const matchesSearch =
-                !q ||
-                name.includes(q) ||
-                category.includes(q) ||
-                desc.includes(q) ||
-                city.includes(q) ||
-                nb.includes(q);
+        buildChips();
+        render();
 
-            const matchesCat = !cat || norm(category) === norm(cat);
-
-
-            const matchesCity = filters.cities.size === 0 || (city && filters.cities.has(city));
-            const matchesNb = filters.neighborhoods.size === 0 || (nb && filters.neighborhoods.has(nb));
-
-            return matchesSearch && matchesCat && matchesCity && matchesNb;
+        searchInput.addEventListener('input', function(){
+            state.q = searchInput.value;
+            clearBtn.classList.toggle('show', state.q.length > 0);
+            render();
         });
 
-        const finalList = applySort(filtered);
-
-        setStatus(`Showing ${finalList.length} of ${allResources.length}`);
-        render(finalList);
-    }
-
-    function clearFilters() {
-        if (searchEl) searchEl.value = "";
-        filters.category = "";
-        filters.cities = new Set();
-        filters.neighborhoods = new Set();
-        if (sortEl) sortEl.value = "name-asc";
-        applyFilters();
-        renderSidebar(allResources);
-    }
-
-    function setView(mode) {
-        const isGrid = mode === "grid";
-        listEl.classList.toggle("is-grid", isGrid);
-        if (viewListBtn) viewListBtn.classList.toggle("is-active", !isGrid);
-        if (viewGridBtn) viewGridBtn.classList.toggle("is-active", isGrid);
-    }
-
-    setStatus("Loading resources...");
-    loadResources()
-        .then(data => {
-            allResources = Array.isArray(data) ? data : (Array.isArray(data.resources) ? data.resources : []);
-            setView("list");
-
-            // read nav params and apply before rendering sidebar
-            const navQ = getQueryParam("q") || sessionStorage.getItem("nav_q") || "";
-            const navCat = getQueryParam("cat") || sessionStorage.getItem("nav_cat") || "";
-
-            // clear so it doesn't "stick" on later visits
-            sessionStorage.removeItem("nav_q");
-            sessionStorage.removeItem("nav_cat");
-
-            if (navQ && searchEl) searchEl.value = navQ;
-
-            if (navCat) {
-                const mapped = CAT_MAP[navCat.toLowerCase()];
-                if (mapped) filters.category = mapped;
-            }
-
-            // render with correct active category chip
-            renderSidebar(allResources);
-            applyFilters();
-
-            // --- sync NAV search <-> Resources search (wait for injected nav) ---
-            (function syncNavToResourceSearch() {
-                const tryBind = () => {
-                    const navInput = document.getElementById("navSearchInput");
-                    if (!navInput || !searchEl) return false;
-
-                    // 1) put the current resources search into the nav input
-                    navInput.value = searchEl.value || "";
-
-                    // 2) when NAV changes, update resources search + filter
-                    navInput.addEventListener("input", () => {
-                        searchEl.value = navInput.value;
-                        applyFilters();
-                    });
-
-                    // 3) when resources search changes, keep NAV in sync
-                    searchEl.addEventListener("input", () => {
-                        navInput.value = searchEl.value;
-                    });
-
-                    return true;
-                };
-
-                // try now, otherwise retry until nav is injected
-                if (tryBind()) return;
-
-                let tries = 0;
-                const t = setInterval(() => {
-                    tries++;
-                    if (tryBind() || tries > 40) clearInterval(t); // ~2s max
-                }, 50);
-            })();
-
-
-            if (navQ && searchEl) {
-                searchEl.focus({ preventScroll: true });
-                searchEl.setSelectionRange(0, searchEl.value.length);
-
-                const y = searchEl.getBoundingClientRect().top + window.scrollY - 120;
-                window.scrollTo({ top: y, behavior: "smooth" });
-            }
-
-            if (searchEl) searchEl.addEventListener("input", applyFilters);
-            if (sortEl) sortEl.addEventListener("change", applyFilters);
-            if (clearEl) clearEl.addEventListener("click", clearFilters);
-
-            if (viewListBtn) viewListBtn.addEventListener("click", () => setView("list"));
-            if (viewGridBtn) viewGridBtn.addEventListener("click", () => setView("grid"));
-        })
-        .catch(err => {
-            console.error("FETCH ERROR:", err);
-            setStatus("Failed to load resources.json (check path + JSON format).");
-            listEl.innerHTML = `<li style="color:#b00020;">${err.message}</li>`;
+        clearBtn.addEventListener('click', function(){
+            searchInput.value = '';
+            state.q = '';
+            clearBtn.classList.remove('show');
+            searchInput.focus();
+            render();
         });
-}
+
+        sortSelect.addEventListener('change', function(){
+            state.sort = sortSelect.value;
+            render();
+        });
+
+        if(resetBtn){
+            resetBtn.addEventListener('click', function(){
+                searchInput.value = '';
+                state.q = '';
+                state.cat = 'all';
+                clearBtn.classList.remove('show');
+                chipsWrap.querySelectorAll('.rx-chip').forEach(function(c){ c.classList.remove('is-active'); });
+                var first = chipsWrap.querySelector('.rx-chip');
+                if(first){ first.classList.add('is-active'); }
+                render();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+    }
+
+    fetch('/data/resources.json')
+        .then(function(r){ return r.json(); })
+        .then(init)
+        .catch(function(){
+            grid.innerHTML = '<p style="color:#7683a0;padding:40px 0;">Could not load resources. Make sure the page is served over a local server (not opened as a file).</p>';
+        });
+})();

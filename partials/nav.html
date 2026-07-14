@@ -22,13 +22,21 @@
 
                 <div class="nav-item has-dd">
                     <button class="nav-link" type="button" aria-haspopup="true" aria-expanded="false">Eat &amp; Drink<span class="dd-caret" aria-hidden="true">&#9662;</span></button>
-                    <div class="nav-dd" role="menu">
-                        <a role="menuitem" href="../pages/places-to-eat.html">Places to Eat</a>
+                    <div class="nav-dd nav-dd--cols" role="menu">
+                        <a role="menuitem" href="../pages/places-to-eat.html?cuisine=american">American</a>
+                        <a role="menuitem" href="../pages/places-to-eat.html?cuisine=asian">Asian</a>
+                        <a role="menuitem" href="../pages/places-to-eat.html?cuisine=italian">Italian</a>
+                        <a role="menuitem" href="../pages/places-to-eat.html?cuisine=mexican-latin">Mexican &amp; Latin</a>
+                        <a role="menuitem" href="../pages/places-to-eat.html?cuisine=mediterranean-middle-eastern">Mediterranean &amp; Middle Eastern</a>
+                        <a role="menuitem" href="../pages/places-to-eat.html?cuisine=indian-south-asian">Indian &amp; South Asian</a>
+                        <a role="menuitem" href="../pages/places-to-eat.html?cuisine=eastern-european">Eastern European</a>
+                        <a role="menuitem" href="../pages/places-to-eat.html?cuisine=central-asian">Central Asian</a>
                         <a role="menuitem" href="../pages/coffee-shops.html">Coffee Shops</a>
                         <a role="menuitem" href="../pages/desserts.html">Desserts</a>
-                        <a role="menuitem" href="../pages/family-friendly-food.html">Family-Friendly Food</a>
+                        <a role="menuitem" href="../pages/family-friendly-food.html">Fast Food</a>
                         <a role="menuitem" href="../pages/date-night-spots.html">Date Night Spots</a>
-                        <a role="menuitem" href="../pages/hidden-gems.html">Hidden Gems</a>
+                        <a role="menuitem" href="../pages/places-to-eat.html?cuisine=bbq-southern">BBQ &amp; Southern</a>
+                        <a role="menuitem" href="../pages/places-to-eat.html?cuisine=seafood">Seafood</a>
                     </div>
                 </div>
 
@@ -76,6 +84,7 @@
                 <div class="nav-item has-dd">
                     <button class="nav-link" type="button" aria-haspopup="true" aria-expanded="false">City Resources<span class="dd-caret" aria-hidden="true">&#9662;</span></button>
                     <div class="nav-dd" role="menu">
+                        <a role="menuitem" href="../pages/resources.html">All Resources</a>
                         <a role="menuitem" href="../pages/healthcare.html">Healthcare</a>
                         <a role="menuitem" href="../pages/mental-health.html">Mental Health</a>
                         <a role="menuitem" href="../pages/food-assistance.html">Food Assistance</a>
@@ -87,10 +96,6 @@
 
                 <div class="nav-item">
                     <a class="nav-link" href="../pages/news.html">News</a>
-                </div>
-
-                <div class="nav-item">
-                    <a class="nav-link" href="../pages/about-us.html">About</a>
                 </div>
             </div>
 
@@ -113,7 +118,18 @@
             </div>
         </div>
 
+        <button class="nav-theme" id="navTheme" type="button" aria-label="Switch to light theme" aria-pressed="false">
+            <svg class="nav-theme-icon nav-theme-icon--moon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20 14.5A8 8 0 0 1 9.5 4a7 7 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            </svg>
+            <svg class="nav-theme-icon nav-theme-icon--sun" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 2.5v2.6M12 18.9v2.6M4.2 4.2l1.9 1.9M17.9 17.9l1.9 1.9M2.5 12h2.6M18.9 12h2.6M4.2 19.8l1.9-1.9M17.9 6.1l1.9-1.9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
+
     </div>
 
-    <div class="nav-scrim" id="navScrim" hidden></div>
 </div>
+
+<div class="nav-scrim" id="navScrim"></div>
