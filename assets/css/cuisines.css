@@ -71,8 +71,9 @@
     transition:
             transform .55s cubic-bezier(.16,.84,.28,1),
             box-shadow .5s ease,
-            filter .45s ease;
-    animation:cuisineIn .8s cubic-bezier(.16,.84,.28,1) both;
+            filter .45s ease,
+            z-index .55s steps(1, jump-both);
+    animation:cuisineIn .8s cubic-bezier(.16,.84,.28,1) backwards;
     will-change:transform, filter;
     backface-visibility:hidden;
 }
@@ -177,8 +178,8 @@
 
 .cuisine-go svg{ width:16px; height:16px; }
 
-/* focus / defocus: when hovering the stack, dim + blur every card... */
-.cuisines-stack:hover .cuisine-card{
+/* focus / defocus: when hovering a card, dim + blur every other card... */
+.cuisines-stack:has(.cuisine-card:hover) .cuisine-card:not(:hover){
     filter:blur(3px) saturate(.9);
     opacity:1;
 }
@@ -189,6 +190,11 @@
     opacity:1;
     transform:rotate(var(--cz-tilt, 0deg)) translateY(-22px) scale(1.16);
     z-index:20;
+    transition:
+            transform .55s cubic-bezier(.16,.84,.28,1),
+            box-shadow .5s ease,
+            filter .45s ease,
+            z-index 0s;
     box-shadow:
             0 2px 0 rgba(255,255,255,.06) inset,
             0 50px 90px rgba(0,0,0,.7),
@@ -225,7 +231,7 @@
     .cuisine-card{ animation:none; transition:filter .3s ease, opacity .3s ease; }
     .cuisine-media,
     .cuisine-body{ transition:none; }
-    .cuisines-stack:hover .cuisine-card{ filter:blur(2px); }
+    .cuisines-stack:has(.cuisine-card:hover) .cuisine-card:not(:hover){ filter:blur(2px); }
     .cuisines-stack .cuisine-card:hover{ transform:rotate(var(--cz-tilt,0deg)) scale(1.12); filter:none; }
     .cuisine-go{ opacity:1; max-height:30px; margin-top:14px; }
 }
@@ -245,7 +251,7 @@
         transform:none !important;
         animation:none;
     }
-    .cuisines-stack:hover .cuisine-card{ filter:none; opacity:1; }
+    .cuisines-stack:has(.cuisine-card:hover) .cuisine-card:not(:hover){ filter:none; opacity:1; }
     .cuisines-stack .cuisine-card:hover{ transform:translateY(-6px) !important; }
     .cuisine-body{ transform:none; }
     .cuisine-go{ opacity:1; max-height:30px; margin-top:12px; }
