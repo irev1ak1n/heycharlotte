@@ -1,0 +1,252 @@
+.cuisines{
+    position:relative;
+    background:#000000;
+    padding:120px 0 130px;
+    overflow:hidden;
+    color:#fff;
+}
+
+.cuisines-inner{
+    width:min(92%, 1340px);
+    margin:0 auto;
+}
+
+.cuisines-head{
+    margin-bottom:60px;
+}
+
+.cuisines-eyebrow{
+    font-size:12px;
+    font-weight:800;
+    letter-spacing:.34em;
+    text-transform:uppercase;
+    text-indent:.34em;
+    color:#C958F3;
+    margin-bottom:16px;
+}
+
+.cuisines-title{
+    font-family:"Bebas Neue", "Archivo Black", system-ui, sans-serif;
+    font-weight:700;
+    font-size:clamp(40px, 5.6vw, 74px);
+    line-height:.96;
+    letter-spacing:.05em;
+    text-transform:uppercase;
+    color:#FFFFFF;
+}
+
+.cuisines-sub{
+    margin-top:16px;
+    max-width:54ch;
+    font-size:16px;
+    line-height:1.65;
+    color:rgba(255,255,255,.55);
+}
+
+.cuisines-stack{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:clamp(360px, 40vw, 480px);
+    perspective:1600px;
+}
+
+.cuisine-card{
+    position:relative;
+    flex:0 0 auto;
+    width:clamp(170px, 17vw, 240px);
+    height:clamp(340px, 38vw, 440px);
+    margin-left:-52px;
+    border-radius:26px;
+    overflow:hidden;
+    background:#0a0a0a;
+    text-decoration:none;
+    color:#fff;
+    isolation:isolate;
+    box-shadow:
+            0 2px 0 rgba(255,255,255,.04) inset,
+            0 30px 55px rgba(0,0,0,.55);
+    transform-origin:center bottom;
+    transition:
+            transform .55s cubic-bezier(.16,.84,.28,1),
+            box-shadow .5s ease,
+            filter .45s ease;
+    animation:cuisineIn .8s cubic-bezier(.16,.84,.28,1) both;
+    will-change:transform, filter;
+    backface-visibility:hidden;
+}
+
+.cuisine-card:first-child{
+    margin-left:0;
+}
+
+.cuisine-card:nth-child(1){ z-index:6; --cz-tilt:-4deg; transform:rotate(-5deg) translateY(6px); animation-delay:.05s; }
+.cuisine-card:nth-child(2){ z-index:5; --cz-tilt:-2deg; transform:rotate(-2.5deg) translateY(1px); animation-delay:.12s; }
+.cuisine-card:nth-child(3){ z-index:4; --cz-tilt:0deg; transform:rotate(0deg); animation-delay:.19s; }
+.cuisine-card:nth-child(4){ z-index:3; --cz-tilt:2deg; transform:rotate(2.5deg) translateY(1px); animation-delay:.26s; }
+.cuisine-card:nth-child(5){ z-index:2; --cz-tilt:4deg; transform:rotate(5deg) translateY(6px); animation-delay:.33s; }
+
+@keyframes cuisineIn{
+    from{ opacity:0; transform:translateY(60px) rotate(0deg) scale(.94); }
+}
+
+.cuisine-media{
+    position:absolute;
+    inset:0;
+    z-index:0;
+    background-image:var(--cz-img, none), var(--cz-fallback);
+    background-size:cover;
+    background-position:center;
+    transform:scale(1.04);
+    transition:transform .8s cubic-bezier(.16,.84,.28,1);
+}
+
+.cuisine-card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    z-index:1;
+    border-radius:inherit;
+    box-shadow:0 0 0 1px rgba(255,255,255,.14) inset;
+    pointer-events:none;
+    transition:box-shadow .5s ease;
+}
+
+.cuisine-card::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    z-index:2;
+    background:linear-gradient(180deg,
+    rgba(0,0,0,.35) 0%,
+    rgba(0,0,0,0) 32%,
+    rgba(0,0,0,.15) 55%,
+    rgba(0,0,0,.7) 82%,
+    rgba(0,0,0,.94) 100%);
+    pointer-events:none;
+    transition:opacity .5s ease;
+}
+
+.cuisine-body{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:3;
+    padding:26px 24px 28px;
+    transform:translateY(10px);
+    transition:transform .6s cubic-bezier(.16,.84,.28,1);
+}
+
+.cuisine-num{
+    display:block;
+    font-family:"Bebas Neue", "Archivo Black", system-ui, sans-serif;
+    font-size:15px;
+    letter-spacing:.14em;
+    color:rgba(255,255,255,.5);
+    margin-bottom:6px;
+    transition:color .4s ease;
+}
+
+.cuisine-card h3{
+    font-family:"Bebas Neue", "Archivo Black", system-ui, sans-serif;
+    font-size:clamp(24px, 2.1vw, 34px);
+    font-weight:700;
+    letter-spacing:.05em;
+    line-height:1;
+    text-transform:uppercase;
+    text-shadow:0 4px 26px rgba(0,0,0,.7);
+}
+
+.cuisine-go{
+    display:inline-flex;
+    align-items:center;
+    gap:9px;
+    margin-top:0;
+    max-height:0;
+    overflow:hidden;
+    opacity:0;
+    font-size:11px;
+    font-weight:800;
+    letter-spacing:.2em;
+    text-transform:uppercase;
+    color:#F0A868;
+    transition:opacity .4s ease, max-height .5s cubic-bezier(.16,.84,.28,1), margin-top .5s cubic-bezier(.16,.84,.28,1);
+}
+
+.cuisine-go svg{ width:16px; height:16px; }
+
+/* focus / defocus: when hovering the stack, dim + blur every card... */
+.cuisines-stack:hover .cuisine-card{
+    filter:blur(3px) saturate(.9);
+    opacity:1;
+}
+
+/* ...except the one being hovered, which snaps into sharp focus and lifts forward */
+.cuisines-stack .cuisine-card:hover{
+    filter:none;
+    opacity:1;
+    transform:rotate(var(--cz-tilt, 0deg)) translateY(-22px) scale(1.16);
+    z-index:20;
+    box-shadow:
+            0 2px 0 rgba(255,255,255,.06) inset,
+            0 50px 90px rgba(0,0,0,.7),
+            0 0 60px rgba(240,168,104,.28);
+}
+
+.cuisine-card:hover .cuisine-media{
+    transform:scale(1.12);
+}
+
+.cuisine-card:hover::before{
+    box-shadow:0 0 0 1px rgba(240,168,104,.55) inset;
+}
+
+.cuisine-card:hover::after{
+    opacity:1;
+}
+
+.cuisine-card:hover .cuisine-body{
+    transform:translateY(0);
+}
+
+.cuisine-card:hover .cuisine-num{
+    color:#F0A868;
+}
+
+.cuisine-card:hover .cuisine-go{
+    opacity:1;
+    max-height:30px;
+    margin-top:14px;
+}
+
+@media (prefers-reduced-motion: reduce){
+    .cuisine-card{ animation:none; transition:filter .3s ease, opacity .3s ease; }
+    .cuisine-media,
+    .cuisine-body{ transition:none; }
+    .cuisines-stack:hover .cuisine-card{ filter:blur(2px); }
+    .cuisines-stack .cuisine-card:hover{ transform:rotate(var(--cz-tilt,0deg)) scale(1.12); filter:none; }
+    .cuisine-go{ opacity:1; max-height:30px; margin-top:14px; }
+}
+
+@media (max-width: 920px){
+    .cuisines{ padding:84px 0 92px; }
+    .cuisines-stack{
+        flex-wrap:wrap;
+        gap:16px;
+        min-height:0;
+        perspective:none;
+    }
+    .cuisine-card{
+        width:clamp(150px, 43vw, 230px) !important;
+        height:clamp(250px, 62vw, 330px);
+        margin-left:0 !important;
+        transform:none !important;
+        animation:none;
+    }
+    .cuisines-stack:hover .cuisine-card{ filter:none; opacity:1; }
+    .cuisines-stack .cuisine-card:hover{ transform:translateY(-6px) !important; }
+    .cuisine-body{ transform:none; }
+    .cuisine-go{ opacity:1; max-height:30px; margin-top:12px; }
+}
