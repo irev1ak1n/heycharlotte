@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Community Resources — Hey Charlotte</title>
+    <meta name="description" content="A directory of trusted Charlotte-area nonprofits and community organizations offering disability support, health, education, jobs, food, housing, crisis help, and family services." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/core/global.css">
+    <link rel="stylesheet" href="/assets/css/nav.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/pages/resources.css">
+</head>
+<body>
+
+<div id="siteNav"></div>
+
+<header class="rx-hero">
+    <div class="rx-wrap">
+        <p class="rx-kicker">Charlotte Resource Hub</p>
+        <h1 class="rx-title">Help, all in one directory.</h1>
+        <p class="rx-lede">Trusted Charlotte-area organizations offering support with disabilities, health, learning, work, food, housing, crisis situations, and family life. Search for what you need, or browse by category.</p>
+        <div class="rx-stats">
+            <div class="rx-stat"><b id="rxTotal">32</b><span>Organizations</span></div>
+            <div class="rx-stat"><b id="rxCatCount">8</b><span>Categories</span></div>
+            <div class="rx-stat"><b>Local</b><span>Charlotte &amp; Mecklenburg</span></div>
+        </div>
+    </div>
+</header>
+
+<div class="rx-controls">
+    <div class="rx-wrap">
+        <div class="rx-controls-inner">
+            <div class="rx-search">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-3.5-3.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                <input id="rxSearch" type="search" placeholder="Search organizations, services, keywords&#8230;" aria-label="Search resources" autocomplete="off">
+                <button class="rx-clear" id="rxClear" type="button" aria-label="Clear search">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </button>
+            </div>
+            <div class="rx-sort">
+                <label for="rxSort">Sort</label>
+                <select id="rxSort" aria-label="Sort resources">
+                    <option value="category">By category</option>
+                    <option value="az">Name A&#8211;Z</option>
+                    <option value="za">Name Z&#8211;A</option>
+                </select>
+            </div>
+        </div>
+        <div class="rx-chips" id="rxChips"></div>
+    </div>
+</div>
+
+<main class="rx-wrap rx-results">
+    <div id="rxResults"></div>
+    <div class="rx-empty" id="rxEmpty">
+        <h3>No matches found</h3>
+        <p>Try a different keyword or clear your filters to see everything.</p>
+        <button id="rxReset" type="button">Reset filters</button>
+    </div>
+</main>
+
+<footer class="rx-foot">
+    <div class="rx-wrap">Listings are provided for community reference. Please confirm hours and services directly with each organization.</div>
+</footer>
+
+<div id="siteFooter"></div>
+
+<script src="/assets/js/core/includes.footer.js" defer></script>
+<script src="/assets/js/core/includes.nav.js" defer></script>
+<script src="/assets/js/resources.js" defer></script>
+</body>
+</html>
