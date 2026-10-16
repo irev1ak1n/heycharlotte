@@ -54,39 +54,47 @@
 
 .cuisine-card{
     position:relative;
+    display:block;
     flex:0 0 auto;
     width:clamp(170px, 17vw, 240px);
     height:clamp(340px, 38vw, 440px);
     margin-left:-52px;
+    text-decoration:none;
+    color:#fff;
+    transition:z-index .55s steps(1, jump-both);
+}
+
+.cuisine-face{
+    position:absolute;
+    inset:0;
     border-radius:26px;
     overflow:hidden;
     background:#0a0a0a;
-    text-decoration:none;
-    color:#fff;
     isolation:isolate;
     box-shadow:
             0 2px 0 rgba(255,255,255,.04) inset,
             0 30px 55px rgba(0,0,0,.55);
+    transform:var(--cz-rest);
     transform-origin:center bottom;
     transition:
             transform .55s cubic-bezier(.16,.84,.28,1),
             box-shadow .5s ease,
-            filter .45s ease,
-            z-index .55s steps(1, jump-both);
-    animation:cuisineIn .8s cubic-bezier(.16,.84,.28,1) backwards;
+            filter .45s ease;
+    animation:cuisineIn .8s cubic-bezier(.16,.84,.28,1) var(--cz-delay) backwards;
     will-change:transform, filter;
     backface-visibility:hidden;
+    pointer-events:none;
 }
 
 .cuisine-card:first-child{
     margin-left:0;
 }
 
-.cuisine-card:nth-child(1){ z-index:6; --cz-tilt:-4deg; transform:rotate(-5deg) translateY(6px); animation-delay:.05s; }
-.cuisine-card:nth-child(2){ z-index:5; --cz-tilt:-2deg; transform:rotate(-2.5deg) translateY(1px); animation-delay:.12s; }
-.cuisine-card:nth-child(3){ z-index:4; --cz-tilt:0deg; transform:rotate(0deg); animation-delay:.19s; }
-.cuisine-card:nth-child(4){ z-index:3; --cz-tilt:2deg; transform:rotate(2.5deg) translateY(1px); animation-delay:.26s; }
-.cuisine-card:nth-child(5){ z-index:2; --cz-tilt:4deg; transform:rotate(5deg) translateY(6px); animation-delay:.33s; }
+.cuisine-card:nth-child(1){ z-index:6; --cz-tilt:-4deg; --cz-rest:rotate(-5deg) translateY(6px); --cz-delay:.05s; }
+.cuisine-card:nth-child(2){ z-index:5; --cz-tilt:-2deg; --cz-rest:rotate(-2.5deg) translateY(1px); --cz-delay:.12s; }
+.cuisine-card:nth-child(3){ z-index:4; --cz-tilt:0deg; --cz-rest:rotate(0deg); --cz-delay:.19s; }
+.cuisine-card:nth-child(4){ z-index:3; --cz-tilt:2deg; --cz-rest:rotate(2.5deg) translateY(1px); --cz-delay:.26s; }
+.cuisine-card:nth-child(5){ z-index:2; --cz-tilt:4deg; --cz-rest:rotate(5deg) translateY(6px); --cz-delay:.33s; }
 
 @keyframes cuisineIn{
     from{ opacity:0; transform:translateY(60px) rotate(0deg) scale(.94); }
@@ -103,7 +111,7 @@
     transition:transform .8s cubic-bezier(.16,.84,.28,1);
 }
 
-.cuisine-card::before{
+.cuisine-face::before{
     content:"";
     position:absolute;
     inset:0;
@@ -114,7 +122,7 @@
     transition:box-shadow .5s ease;
 }
 
-.cuisine-card::after{
+.cuisine-face::after{
     content:"";
     position:absolute;
     inset:0;
@@ -179,22 +187,22 @@
 .cuisine-go svg{ width:16px; height:16px; }
 
 /* focus / defocus: when hovering a card, dim + blur every other card... */
-.cuisines-stack:has(.cuisine-card:hover) .cuisine-card:not(:hover){
+.cuisines-stack:has(.cuisine-card:hover) .cuisine-card:not(:hover) .cuisine-face{
     filter:blur(3px) saturate(.9);
     opacity:1;
 }
 
 /* ...except the one being hovered, which snaps into sharp focus and lifts forward */
 .cuisines-stack .cuisine-card:hover{
+    z-index:20;
+    transition:z-index 0s;
+}
+
+.cuisines-stack .cuisine-card:hover .cuisine-face{
+    pointer-events:auto;
     filter:none;
     opacity:1;
     transform:rotate(var(--cz-tilt, 0deg)) translateY(-22px) scale(1.16);
-    z-index:20;
-    transition:
-            transform .55s cubic-bezier(.16,.84,.28,1),
-            box-shadow .5s ease,
-            filter .45s ease,
-            z-index 0s;
     box-shadow:
             0 2px 0 rgba(255,255,255,.06) inset,
             0 50px 90px rgba(0,0,0,.7),
@@ -205,11 +213,11 @@
     transform:scale(1.12);
 }
 
-.cuisine-card:hover::before{
+.cuisine-card:hover .cuisine-face::before{
     box-shadow:0 0 0 1px rgba(240,168,104,.55) inset;
 }
 
-.cuisine-card:hover::after{
+.cuisine-card:hover .cuisine-face::after{
     opacity:1;
 }
 
@@ -228,11 +236,11 @@
 }
 
 @media (prefers-reduced-motion: reduce){
-    .cuisine-card{ animation:none; transition:filter .3s ease, opacity .3s ease; }
+    .cuisine-face{ animation:none; transition:filter .3s ease, opacity .3s ease; }
     .cuisine-media,
     .cuisine-body{ transition:none; }
-    .cuisines-stack:has(.cuisine-card:hover) .cuisine-card:not(:hover){ filter:blur(2px); }
-    .cuisines-stack .cuisine-card:hover{ transform:rotate(var(--cz-tilt,0deg)) scale(1.12); filter:none; }
+    .cuisines-stack:has(.cuisine-card:hover) .cuisine-card:not(:hover) .cuisine-face{ filter:blur(2px); }
+    .cuisines-stack .cuisine-card:hover .cuisine-face{ transform:rotate(var(--cz-tilt,0deg)) scale(1.12); filter:none; }
     .cuisine-go{ opacity:1; max-height:30px; margin-top:14px; }
 }
 
@@ -248,11 +256,13 @@
         width:clamp(150px, 43vw, 230px) !important;
         height:clamp(250px, 62vw, 330px);
         margin-left:0 !important;
+    }
+    .cuisine-face{
         transform:none !important;
         animation:none;
     }
-    .cuisines-stack:has(.cuisine-card:hover) .cuisine-card:not(:hover){ filter:none; opacity:1; }
-    .cuisines-stack .cuisine-card:hover{ transform:translateY(-6px) !important; }
+    .cuisines-stack:has(.cuisine-card:hover) .cuisine-card:not(:hover) .cuisine-face{ filter:none; opacity:1; }
+    .cuisines-stack .cuisine-card:hover .cuisine-face{ transform:translateY(-6px) !important; }
     .cuisine-body{ transform:none; }
     .cuisine-go{ opacity:1; max-height:30px; margin-top:12px; }
 }
