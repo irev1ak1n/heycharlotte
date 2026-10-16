@@ -9,7 +9,7 @@
     try{ fast = sessionStorage.getItem(KEY) === '1'; }catch(e){}
     try{ sessionStorage.setItem(KEY, '1'); }catch(e){}
 
-    var MIN_SHOW = fast ? 500 : 1200;
+    var MIN_SHOW = fast ? 750 : 1700;
     var MAX_WAIT = fast ? 3000 : 8000;
 
     document.body.classList.add('is-loading');
@@ -80,7 +80,7 @@
         target = Math.min(target, elapsed / MIN_SHOW * 100);
 
         if(target > shown){
-            shown += Math.max((target - shown) * (1 - Math.exp(-dt / 140)), dt * 0.01);
+            shown += Math.max((target - shown) * (1 - Math.exp(-dt / 220)), dt * 0.007);
             if(shown > target){ shown = target; }
             render();
         }
