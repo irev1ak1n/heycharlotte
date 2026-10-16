@@ -1,0 +1,1082 @@
+[
+  {
+    "id": 1,
+    "placeId": "ChIJ5SbJEAApVIgRO6Fk8MRPhL4",
+    "name": "Coco Mexican Restaurant - CLT",
+    "slug": "coco-mexican-restaurant-clt",
+    "category": "mexican-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "",
+      "cuisine": "Mexican",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "8145 Ardrey Kell Rd #103",
+      "phone": null,
+      "rating": 4.8,
+      "userRatingsTotal": 105,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 2,
+    "placeId": "ChIJBYwU83mfVogRaphpq1L1Wc0",
+    "name": "La Capital MX",
+    "slug": "la-capital-mx",
+    "category": "mexican-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–60",
+      "cuisine": "Mexican",
+      "hours": "Opens 5 PM"
+    },
+    "dynamic": {
+      "address": "1910 South Blvd",
+      "phone": null,
+      "rating": 4.8,
+      "userRatingsTotal": 4000,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 3,
+    "placeId": "ChIJFdG5ktmhVogRAC_inB1J0ew",
+    "name": "Casa Azteca Uptown Charlotte",
+    "slug": "casa-azteca-uptown-charlotte",
+    "category": "mexican-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Restaurant",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "129 W Trade St",
+      "phone": null,
+      "rating": 4.8,
+      "userRatingsTotal": 103,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 4,
+    "placeId": "ChIJ50sl_zaZVogRViKTYC5cKZk",
+    "name": "Rio 150 Mexican Restaurant-Whitehall Commons",
+    "slug": "rio-150-mexican-restaurant-whitehall-commons",
+    "category": "mexican-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$10–20",
+      "cuisine": "Restaurant",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "8164 S Tryon St",
+      "phone": null,
+      "rating": 4.7,
+      "userRatingsTotal": 568,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 5,
+    "placeId": "ChIJf2JuwPmdVogRiV9-gcsU9H8",
+    "name": "Frida's Mexican Cantina",
+    "slug": "frida-s-mexican-cantina",
+    "category": "mexican-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Restaurant",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "8740 Pineville-Matthews Rd",
+      "phone": null,
+      "rating": 4.5,
+      "userRatingsTotal": 1100,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 6,
+    "placeId": "ChIJZaRxbBOfVogRnul6MHJRqek",
+    "name": "Puerta",
+    "slug": "puerta",
+    "category": "mexican-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–80",
+      "cuisine": "Mexican",
+      "hours": "Opens 12 PM Wed"
+    },
+    "dynamic": {
+      "address": "1961 E 7th St",
+      "phone": null,
+      "rating": 4.1,
+      "userRatingsTotal": 526,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 7,
+    "placeId": "ChIJ9cWffUehVogR0AnGeLRotWw",
+    "name": "Dos Caminos",
+    "slug": "dos-caminos",
+    "category": "mexican-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Mexican",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "601 S Tryon St #135",
+      "phone": null,
+      "rating": 4.4,
+      "userRatingsTotal": 1800,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 8,
+    "placeId": "ChIJvSe33wadVogRBi-pRIQH794",
+    "name": "Cabo's Mexican Cuisine & Cantina",
+    "slug": "cabo-s-mexican-cuisine-and-cantina",
+    "category": "mexican-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$10–20",
+      "cuisine": "Mexican",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "6676 Carmel Rd",
+      "phone": null,
+      "rating": 4.4,
+      "userRatingsTotal": 1300,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 9,
+    "placeId": "ChIJ_TYR9r2fVogRED1zCiKz3oU",
+    "name": "Matador Charlotte",
+    "slug": "matador-charlotte",
+    "category": "mexican-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Mexican",
+      "hours": "Opens 3 PM"
+    },
+    "dynamic": {
+      "address": "1215 South Blvd",
+      "phone": null,
+      "rating": 4.2,
+      "userRatingsTotal": 565,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 10,
+    "placeId": "ChIJuaxMAfCdVogR2IHsrqEMZbY",
+    "name": "Azul Tequilería & Cocina",
+    "slug": "azul-tequiler-a-and-cocina",
+    "category": "mexican-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Mexican",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "14825 Ballantyne Village Way Ste 155",
+      "phone": null,
+      "rating": 4.5,
+      "userRatingsTotal": 350,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 11,
+    "placeId": "ChIJCaDuSgCfVogREyicC_tNGS4",
+    "name": "MEZCAL 87 CANTINA+BAR",
+    "slug": "mezcal-87-cantina-bar",
+    "category": "mexican-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Mexican",
+      "hours": "Opens 3 PM"
+    },
+    "dynamic": {
+      "address": "4724 Old Pineville Rd",
+      "phone": null,
+      "rating": 4.3,
+      "userRatingsTotal": 219,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 12,
+    "placeId": "ChIJZSJCxcmDVogRU6PAVkwu9QI",
+    "name": "La Victoria Mexican Restaurant",
+    "slug": "la-victoria-mexican-restaurant",
+    "category": "mexican-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$10–20",
+      "cuisine": "Mexican",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "16139 Lancaster Hwy",
+      "phone": null,
+      "rating": 4.6,
+      "userRatingsTotal": 887,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 13,
+    "placeId": "ChIJV1K2BC8nVIgR2o4Y-Eu67mY",
+    "name": "Margaritas Mexican Restaurant",
+    "slug": "margaritas-mexican-restaurant",
+    "category": "mexican-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Mexican",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "9805 Sandy Rock Pl Ste 8",
+      "phone": null,
+      "rating": 4.1,
+      "userRatingsTotal": 527,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 14,
+    "placeId": "ChIJa0GmFD-eVogRiRyBp0qxuKo",
+    "name": "Paco's Tacos & Tequila",
+    "slug": "paco-s-tacos-and-tequila",
+    "category": "mexican-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Tex Mex",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "6401 Carnegie Blvd #8a",
+      "phone": null,
+      "rating": 4.5,
+      "userRatingsTotal": 2600,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 15,
+    "placeId": "ChIJQbH_ES-dVogRJchRJRfNNLA",
+    "name": "Zapata's Mexican Restaurant",
+    "slug": "zapata-s-mexican-restaurant",
+    "category": "mexican-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$10–30",
+      "cuisine": "Mexican",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "15105 John J Delaney Dr",
+      "phone": null,
+      "rating": 4.3,
+      "userRatingsTotal": 1200,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 16,
+    "placeId": "ChIJV4oisOmfVogRx5f2f30K1kU",
+    "name": "Los sabrosos cocina mexicana",
+    "slug": "los-sabrosos-cocina-mexicana",
+    "category": "mexican-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$10–20",
+      "cuisine": "Restaurant",
+      "hours": ""
+    },
+    "dynamic": {
+      "address": "500 W Summit Ave",
+      "phone": null,
+      "rating": 3.5,
+      "userRatingsTotal": 66,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 17,
+    "placeId": "ChIJ6wrqOumfVogRoo_00E4_n4Y",
+    "name": "Ru Ru's Tacos & Tequila",
+    "slug": "ru-ru-s-tacos-and-tequila",
+    "category": "mexican-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Mexican",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "715 Providence Rd",
+      "phone": null,
+      "rating": 4.3,
+      "userRatingsTotal": 1900,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 18,
+    "placeId": "ChIJN97iUyefVogR66MPSS4UpiQ",
+    "name": "Azteca",
+    "slug": "azteca",
+    "category": "mexican-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$10–20",
+      "cuisine": "Mexican",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "116 E Woodlawn Rd",
+      "phone": null,
+      "rating": 4.3,
+      "userRatingsTotal": 3600,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 19,
+    "placeId": "ChIJkfUpMLuhVogRPskzOsoLR4M",
+    "name": "Maiz Agua Sal - MAS",
+    "slug": "maiz-agua-sal-mas",
+    "category": "mexican-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Mexican",
+      "hours": "Opens 10:30 AM"
+    },
+    "dynamic": {
+      "address": "1018 Jay St #110",
+      "phone": null,
+      "rating": 4.4,
+      "userRatingsTotal": 252,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 20,
+    "placeId": "ChIJ5UWnQQAhVIgRPrSPWMfTNuE",
+    "name": "Chuyita's Mexican Restaurant and Bar",
+    "slug": "chuyita-s-mexican-restaurant-and-bar",
+    "category": "mexican-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "",
+      "cuisine": "Mexican",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "1727 Sardis Rd N",
+      "phone": null,
+      "rating": 4.7,
+      "userRatingsTotal": 208,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 21,
+    "placeId": "ChIJrUEv0L8fVIgRzeyQrVT_O8g",
+    "name": "Ma'Luz Mexican Grill (Mi Pueblo)",
+    "slug": "ma-luz-mexican-grill-mi-pueblo",
+    "category": "mexican-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "",
+      "cuisine": "Mexican",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "7003 University City Blvd",
+      "phone": null,
+      "rating": 4.6,
+      "userRatingsTotal": 5300,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 22,
+    "placeId": "ChIJHTp-14-fVogR3Ttibfkq1ss",
+    "name": "Superica",
+    "slug": "superica",
+    "category": "mexican-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Tex Mex",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "101 W Worthington Ave #100",
+      "phone": null,
+      "rating": 4.5,
+      "userRatingsTotal": 1800,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 23,
+    "placeId": "ChIJGXZDKK4hVIgRKNl7X7DJ8lg",
+    "name": "Superica Strawberry Hill",
+    "slug": "superica-strawberry-hill",
+    "category": "mexican-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Mexican",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "4223 Providence Rd Ste D",
+      "phone": null,
+      "rating": 4.4,
+      "userRatingsTotal": 814,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 24,
+    "placeId": "ChIJnwStC9KbVogRPM9khwOgJ-8",
+    "name": "La Poblanita Mexican Restaurant & Candy Store",
+    "slug": "la-poblanita-mexican-restaurant-and-candy-store",
+    "category": "mexican-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$10–20",
+      "cuisine": "Mexican",
+      "hours": "Opens 10 AM"
+    },
+    "dynamic": {
+      "address": "1925 Westinghouse Blvd",
+      "phone": null,
+      "rating": 4.3,
+      "userRatingsTotal": 2100,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 25,
+    "placeId": "ChIJ8cck5WOhVogRTWiFVhe7dkI",
+    "name": "Azul Tacos And Beer",
+    "slug": "azul-tacos-and-beer",
+    "category": "mexican-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$10–20",
+      "cuisine": "Restaurant",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "2122 Thrift Rd A",
+      "phone": null,
+      "rating": 4.7,
+      "userRatingsTotal": 733,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 26,
+    "placeId": "ChIJd5qKzi-gVogRFKsoBKet6Lc",
+    "name": "Que Onda Tacos + Tequila Uptown",
+    "slug": "que-onda-tacos-tequila-uptown",
+    "category": "mexican-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Mexican",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "333 W Trade St Unit 101",
+      "phone": null,
+      "rating": 4.3,
+      "userRatingsTotal": 1900,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 27,
+    "placeId": "ChIJk9nOvN2hVogRCFpRUBS6YF4",
+    "name": "Que Onda - Plaza Midwood",
+    "slug": "que-onda-plaza-midwood",
+    "category": "mexican-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Mexican",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "1518 Central Ave",
+      "phone": null,
+      "rating": 4.7,
+      "userRatingsTotal": 864,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 28,
+    "placeId": "ChIJ5WJrPXKfVogR37U0gfllBX0",
+    "name": "SouthBound",
+    "slug": "southbound",
+    "category": "mexican-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$10–20",
+      "cuisine": "Tacos",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "2433 South Blvd",
+      "phone": null,
+      "rating": 4.2,
+      "userRatingsTotal": 1600,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 29,
+    "placeId": "ChIJJ3gGSQCfVogROfYQJleAmjY",
+    "name": "The Story of \"Mi Carino\"",
+    "slug": "the-story-of-mi-carino",
+    "category": "mexican-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "",
+      "cuisine": "Mexican",
+      "hours": "Opens 5 PM"
+    },
+    "dynamic": {
+      "address": "1440 S Tryon St Ste 100",
+      "phone": null,
+      "rating": 4.7,
+      "userRatingsTotal": 69,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 30,
+    "placeId": "ChIJXc_6u5KhVogR-DyF99x-7y4",
+    "name": "Que Fresa Taqueria + Bar (Wesley Heights)",
+    "slug": "que-fresa-taqueria-bar-wesley-heights",
+    "category": "mexican-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$10–20",
+      "cuisine": "Mexican",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "1500 W Morehead St A",
+      "phone": null,
+      "rating": 4.4,
+      "userRatingsTotal": 715,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 31,
+    "placeId": "ChIJFdnRolicVogRiPQg2NysWTs",
+    "name": "Monterrey Mexican Restaurant Of Pineville",
+    "slug": "monterrey-mexican-restaurant-of-pineville",
+    "category": "mexican-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$10–20",
+      "cuisine": "Mexican",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "10707 Park Rd",
+      "phone": null,
+      "rating": 4.2,
+      "userRatingsTotal": 1100,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 32,
+    "placeId": "ChIJG8oRHsSfVogRs2_Be2Q8oaM",
+    "name": "Mal Pan",
+    "slug": "mal-pan",
+    "category": "mexican-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Mexican",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "4625 Piedmont Row Dr # 115-D",
+      "phone": null,
+      "rating": 4.5,
+      "userRatingsTotal": 610,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 33,
+    "placeId": "ChIJb1U-4swnVIgRJvyqv3qMU3s",
+    "name": "Chuy's",
+    "slug": "chuy-s",
+    "category": "mexican-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$10–20",
+      "cuisine": "Tex Mex",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "7314 Waverly Walk Ave E8",
+      "phone": null,
+      "rating": 4.1,
+      "userRatingsTotal": 2000,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 34,
+    "placeId": "ChIJbeBLIACdVogRZ0aGCYR94b0",
+    "name": "123 Main Mexico",
+    "slug": "123-main-mexico",
+    "category": "mexican-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Mexican",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "Pineville, NC",
+      "phone": null,
+      "rating": 4.1,
+      "userRatingsTotal": 272,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 35,
+    "placeId": "ChIJz2YHf0QhVIgRRieMC7kSM1U",
+    "name": "Mi Pueblo Mexican Grill",
+    "slug": "mi-pueblo-mexican-grill",
+    "category": "mexican-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$10–20",
+      "cuisine": "Mexican",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "1820 Sardis Rd N",
+      "phone": null,
+      "rating": 4.6,
+      "userRatingsTotal": 2600,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 36,
+    "placeId": "ChIJO3jTGOieVogRvps5SsJl5wY",
+    "name": "Maria's Mexican Restaurant",
+    "slug": "maria-s-mexican-restaurant",
+    "category": "mexican-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$10–20",
+      "cuisine": "Mexican",
+      "hours": "Opens 10:30 AM"
+    },
+    "dynamic": {
+      "address": "5234 South Blvd",
+      "phone": null,
+      "rating": 4,
+      "userRatingsTotal": 1900,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 37,
+    "placeId": "ChIJQYdt9oWcVogRWMDzO1RVTwU",
+    "name": "El Veracruz Mexican Restaurant",
+    "slug": "el-veracruz-mexican-restaurant",
+    "category": "mexican-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$10–20",
+      "cuisine": "Mexican",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "Pineville, NC",
+      "phone": null,
+      "rating": 4.4,
+      "userRatingsTotal": 1700,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 38,
+    "placeId": "ChIJrfINDgyfVogRv8WuQDbStD4",
+    "name": "Mar y Tierra Restaurant South Tryon",
+    "slug": "mar-y-tierra-restaurant-south-tryon",
+    "category": "mexican-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Mexican",
+      "hours": "Opens 8 AM"
+    },
+    "dynamic": {
+      "address": "4426 S Tryon St",
+      "phone": null,
+      "rating": 4.4,
+      "userRatingsTotal": 648,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 39,
+    "placeId": "ChIJw9-m9IqfVogRMAaQ_O5BoJY",
+    "name": "Condado Tacos",
+    "slug": "condado-tacos",
+    "category": "mexican-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$10–20",
+      "cuisine": "Mexican",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "1536 Camden Rd #107",
+      "phone": null,
+      "rating": 4.4,
+      "userRatingsTotal": 2000,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 40,
+    "placeId": "ChIJZdNZvAidVogRtQdB9lXmgs4",
+    "name": "Cabo Fish Taco",
+    "slug": "cabo-fish-taco",
+    "category": "mexican-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Tacos",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "11611 N Community House Rd",
+      "phone": null,
+      "rating": 4.4,
+      "userRatingsTotal": 990,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  }
+]

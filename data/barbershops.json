@@ -1,0 +1,574 @@
+[
+  {
+    "id": 1,
+    "placeId": "ChIJNdON5i0nVIgRbZ7H4VvnTow",
+    "name": "V's Barbershop – Charlotte Waverly",
+    "slug": "v-s-barbershop-charlotte-waverly",
+    "category": "barbershops",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "years": "5+ years in business",
+      "hours": "Opens 9 AM Mon"
+    },
+    "dynamic": {
+      "address": "7416 Waverly Walk Avenue, Charlotte, NC",
+      "phone": "(704) 246-6298",
+      "rating": 4.9,
+      "userRatingsTotal": 1200,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 2,
+    "placeId": "ChIJyb3ZEcKfVogRzuBQVzus2C8",
+    "name": "Colonial Barber Shop",
+    "slug": "colonial-barber-shop",
+    "category": "barbershops",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "years": "",
+      "hours": "Opens 8:30 AM Tue"
+    },
+    "dynamic": {
+      "address": "1041 Providence Road, Charlotte, NC",
+      "phone": "(704) 333-2418",
+      "rating": 4.7,
+      "userRatingsTotal": 59,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 3,
+    "placeId": "ChIJm5Zo0BohVIgRwak1coFgWLg",
+    "name": "Francis Hair Lounge",
+    "slug": "francis-hair-lounge",
+    "category": "barbershops",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "years": "",
+      "hours": "Opens 9 AM Mon"
+    },
+    "dynamic": {
+      "address": "1716 Windsor Square Drive, Charlotte, NC",
+      "phone": "(980) 339-8916",
+      "rating": 4.9,
+      "userRatingsTotal": 239,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 4,
+    "placeId": "ChIJaZuFUFGdVogRnhXPg3zymdg",
+    "name": "Ballantyne Barbershop",
+    "slug": "ballantyne-barbershop",
+    "category": "barbershops",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "years": "10+ years in business",
+      "hours": "Opens 9 AM Tue"
+    },
+    "dynamic": {
+      "address": "Charlotte, NC",
+      "phone": "(980) 299-2366",
+      "rating": 4.5,
+      "userRatingsTotal": 209,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 5,
+    "placeId": "ChIJWwDyjMGdVogRvb0kyjcGWj0",
+    "name": "R&L Barbershop",
+    "slug": "r-and-l-barbershop",
+    "category": "barbershops",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "years": "5+ years in business",
+      "hours": "Opens 9 AM Mon"
+    },
+    "dynamic": {
+      "address": "Charlotte, NC",
+      "phone": "(980) 335-1233",
+      "rating": 4.8,
+      "userRatingsTotal": 372,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 6,
+    "placeId": "",
+    "name": "R&L Barbershop at Ardrey Kell",
+    "slug": "r-and-l-barbershop-at-ardrey-kell",
+    "category": "barbershops",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "years": "5+ years in business",
+      "hours": "Opens 9 AM Tue"
+    },
+    "dynamic": {
+      "address": "Charlotte, NC",
+      "phone": "(704) 443-7013",
+      "rating": 4.9,
+      "userRatingsTotal": 215,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 7,
+    "placeId": "ChIJsymeUoKfVogRIwLmRivkhZg",
+    "name": "Hawk & Fade Barbershop",
+    "slug": "hawk-and-fade-barbershop",
+    "category": "barbershops",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "years": "",
+      "hours": "Opens 9 AM Mon"
+    },
+    "dynamic": {
+      "address": "Charlotte, NC",
+      "phone": "(704) 412-3100",
+      "rating": 4.8,
+      "userRatingsTotal": 720,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 8,
+    "placeId": "ChIJuxFX4iedVogRV4EmxAUpNz8",
+    "name": "Roosters Men's Grooming Center – Ballantyne",
+    "slug": "roosters-men-s-grooming-center-ballantyne",
+    "category": "barbershops",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "years": "20+ years in business",
+      "hours": "Opens 9 AM Mon"
+    },
+    "dynamic": {
+      "address": "Charlotte, NC",
+      "phone": "(704) 542-0098",
+      "rating": 4.7,
+      "userRatingsTotal": 782,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 9,
+    "placeId": "ChIJoeooOFidVogReamOITdaybE",
+    "name": "Arrow – Ballantyne",
+    "slug": "arrow-ballantyne",
+    "category": "barbershops",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "years": "",
+      "hours": "Opens 10 AM Mon"
+    },
+    "dynamic": {
+      "address": "Charlotte, NC",
+      "phone": "(704) 526-0721",
+      "rating": 4.8,
+      "userRatingsTotal": 54,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 10,
+    "placeId": "ChIJgdZbnnGdVogRvepQ_CggO40",
+    "name": "Lavish Perception Studio Barbershop",
+    "slug": "lavish-perception-studio-barbershop",
+    "category": "barbershops",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "years": "3+ years in business",
+      "hours": "Opens 12 PM Tue"
+    },
+    "dynamic": {
+      "address": "Charlotte, NC",
+      "phone": "(980) 524-2469",
+      "rating": 5,
+      "userRatingsTotal": 27,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 11,
+    "placeId": "ChIJB_oczf8fVIgRhhYC9CwH1jM",
+    "name": "Charlotte Barber & Beard",
+    "slug": "charlotte-barber-and-beard",
+    "category": "barbershops",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "years": "7+ years in business",
+      "hours": "Opens 10 AM Mon"
+    },
+    "dynamic": {
+      "address": "Charlotte, NC",
+      "phone": "(704) 595-7795",
+      "rating": 4.6,
+      "userRatingsTotal": 399,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 12,
+    "placeId": "ChIJvXzNljwfVIgRcxKipY0lLY8",
+    "name": "Distinguished Gentleman Barbershop",
+    "slug": "distinguished-gentleman-barbershop",
+    "category": "barbershops",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "years": "7+ years in business",
+      "hours": "Open 24 hours"
+    },
+    "dynamic": {
+      "address": "Charlotte, NC",
+      "phone": "(704) 387-1308",
+      "rating": 4.4,
+      "userRatingsTotal": 82,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 13,
+    "placeId": "ChIJlYgIzs0nVIgRK1OgRF9K1ZQ",
+    "name": "Roosters Men's Grooming Center",
+    "slug": "roosters-men-s-grooming-center",
+    "category": "barbershops",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "years": "10+ years in business",
+      "hours": "Opens 10 AM Mon"
+    },
+    "dynamic": {
+      "address": "Charlotte, NC",
+      "phone": "(980) 262-4583",
+      "rating": 4.8,
+      "userRatingsTotal": 927,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 14,
+    "placeId": "ChIJ67ZYhy-gVogR1aqnkerQ3Z4",
+    "name": "the CUT Barbershop",
+    "slug": "the-cut-barbershop",
+    "category": "barbershops",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "years": "15+ years in business",
+      "hours": "Opens 9 AM Mon"
+    },
+    "dynamic": {
+      "address": "Charlotte, NC",
+      "phone": "(704) 405-0800",
+      "rating": 4.7,
+      "userRatingsTotal": 507,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 15,
+    "placeId": "ChIJOZM3x06fVogREvdcqbSDyM4",
+    "name": "Urban Barber & Style CLT",
+    "slug": "urban-barber-and-style-clt",
+    "category": "barbershops",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "years": "",
+      "hours": "Opens 9 AM Tue"
+    },
+    "dynamic": {
+      "address": "Charlotte, NC",
+      "phone": "(980) 666-0030",
+      "rating": 4.9,
+      "userRatingsTotal": 112,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 16,
+    "placeId": "ChIJYVLcdd4nVIgRU9QVmwWI8_s",
+    "name": "Ace of Fades Barbershop",
+    "slug": "ace-of-fades-barbershop",
+    "category": "barbershops",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "years": "3+ years in business",
+      "hours": "Opens 9 AM Tue"
+    },
+    "dynamic": {
+      "address": "Charlotte, NC",
+      "phone": "(704) 524-1928",
+      "rating": 4.8,
+      "userRatingsTotal": 24,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 17,
+    "placeId": "ChIJyzwF9TefVogR68p7UMKuqd4",
+    "name": "Revive Barbershop Charlotte",
+    "slug": "revive-barbershop-charlotte",
+    "category": "barbershops",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "years": "",
+      "hours": "Opens 11 AM Tue"
+    },
+    "dynamic": {
+      "address": "Charlotte, NC",
+      "phone": "(704) 417-0668",
+      "rating": 4.9,
+      "userRatingsTotal": 91,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 18,
+    "placeId": "ChIJoXsumpieVogRYPzpNIFFKCE",
+    "name": "D Kache Barbershop & Salon",
+    "slug": "d-kache-barbershop-and-salon",
+    "category": "barbershops",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "years": "15+ years in business",
+      "hours": "Opens 9 AM Mon"
+    },
+    "dynamic": {
+      "address": "Charlotte, NC",
+      "phone": "(980) 470-9972",
+      "rating": 4.8,
+      "userRatingsTotal": 596,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 19,
+    "placeId": "ChIJl0EdJdIfVIgRNrWnKIvZaa8",
+    "name": "Midwood Barbers",
+    "slug": "midwood-barbers",
+    "category": "barbershops",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "years": "7+ years in business",
+      "hours": "Opens 10 AM Tue"
+    },
+    "dynamic": {
+      "address": "Charlotte, NC",
+      "phone": "(980) 237-1222",
+      "rating": 4.9,
+      "userRatingsTotal": 392,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 20,
+    "placeId": "ChIJYy9z4JyfVogRbX4yM7O2O_M",
+    "name": "Shear Excellence",
+    "slug": "shear-excellence",
+    "category": "barbershops",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "years": "10+ years in business",
+      "hours": "Opens 10 AM Mon"
+    },
+    "dynamic": {
+      "address": "Charlotte, NC",
+      "phone": "(704) 900-6219",
+      "rating": 4.8,
+      "userRatingsTotal": 581,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 21,
+    "placeId": "ChIJ5wrkHR6jVogRiBghfIT5CKU",
+    "name": "Kingdom Cuts LLC",
+    "slug": "kingdom-cuts-llc",
+    "category": "barbershops",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "years": "5+ years in business",
+      "hours": "Opens 8 AM Tue"
+    },
+    "dynamic": {
+      "address": "Charlotte, NC",
+      "phone": "(980) 498-1912",
+      "rating": 4.9,
+      "userRatingsTotal": 210,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 22,
+    "placeId": "ChIJWwdKJNyhVogR1hpqciNg06I",
+    "name": "Scissors & Scotch",
+    "slug": "scissors-and-scotch",
+    "category": "barbershops",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "years": "",
+      "hours": "Opens 10 AM Mon"
+    },
+    "dynamic": {
+      "address": "Charlotte, NC",
+      "phone": "(704) 970-0101",
+      "rating": 4.9,
+      "userRatingsTotal": 619,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  }
+]

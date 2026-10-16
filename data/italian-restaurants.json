@@ -1,0 +1,1082 @@
+[
+  {
+    "id": 1,
+    "placeId": "ChIJScJKpy0nVIgRnsNxR64wDRw",
+    "name": "Little Mama's Italian",
+    "slug": "little-mama-s-italian",
+    "category": "italian-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Italian",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "9825 Sandy Rock Pl",
+      "phone": null,
+      "rating": 4.6,
+      "userRatingsTotal": 850,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 2,
+    "placeId": "ChIJD-Um4jqhVogRg_iTz8PG1mw",
+    "name": "Angeline's",
+    "slug": "angeline-s",
+    "category": "italian-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$30–90",
+      "cuisine": "Italian",
+      "hours": "Opens 7 AM"
+    },
+    "dynamic": {
+      "address": "303 S Church St",
+      "phone": null,
+      "rating": 4.7,
+      "userRatingsTotal": 3700,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 3,
+    "placeId": "ChIJbT-Vu42fVogRZIIqgTiyxw0",
+    "name": "Mama Ricotta's",
+    "slug": "mama-ricotta-s",
+    "category": "italian-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Italian",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "601 S Kings Dr AA",
+      "phone": null,
+      "rating": 4.6,
+      "userRatingsTotal": 4100,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 4,
+    "placeId": "ChIJ9wE84qyfVogR608ap0ZWyyg",
+    "name": "Little Mama's Italian",
+    "slug": "little-mama-s-italian-4521",
+    "category": "italian-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Italian",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "4521 Sharon Rd",
+      "phone": null,
+      "rating": 4.6,
+      "userRatingsTotal": 2000,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 5,
+    "placeId": "ChIJhyt_f2GdVogRzhH4eLLQVc8",
+    "name": "Postino Ballantyne",
+    "slug": "postino-ballantyne",
+    "category": "italian-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Italian",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "15210 Bowl St #103",
+      "phone": null,
+      "rating": 4.3,
+      "userRatingsTotal": 496,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 6,
+    "placeId": "ChIJxyEU7RWeVogR3fOJri1F1-Q",
+    "name": "Maggiano's Little Italy",
+    "slug": "maggiano-s-little-italy",
+    "category": "italian-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–60",
+      "cuisine": "Italian",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "4400 Sharon Rd",
+      "phone": null,
+      "rating": 4.3,
+      "userRatingsTotal": 4700,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 7,
+    "placeId": "ChIJi8-gn3-fVogR5iPxG3TIT-c",
+    "name": "North Italia",
+    "slug": "north-italia",
+    "category": "italian-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Italian",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "1414 S Tryon St Ste 140",
+      "phone": null,
+      "rating": 4.4,
+      "userRatingsTotal": 2200,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 8,
+    "placeId": "ChIJV-ZxiW6fVogRgUQhv-kqtjQ",
+    "name": "Osteria LuCa",
+    "slug": "osteria-luca",
+    "category": "italian-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$30–40",
+      "cuisine": "Italian",
+      "hours": "Opens 12 PM"
+    },
+    "dynamic": {
+      "address": "4127 Park Rd",
+      "phone": null,
+      "rating": 4.6,
+      "userRatingsTotal": 413,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 9,
+    "placeId": "ChIJLd8OKnKfVogRkHhbbJIuFy8",
+    "name": "Mano Bella - South Park",
+    "slug": "mano-bella-south-park",
+    "category": "italian-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Italian",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "721 Gov Morrison St Ste 150",
+      "phone": null,
+      "rating": 4.5,
+      "userRatingsTotal": 273,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 10,
+    "placeId": "ChIJlcVBmnidVogR5g-zgYpieP8",
+    "name": "North Italia",
+    "slug": "north-italia-15120",
+    "category": "italian-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Italian",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "15120 Bowl St #102",
+      "phone": null,
+      "rating": 3.9,
+      "userRatingsTotal": 644,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 11,
+    "placeId": "ChIJnTp3-yidVogRwdUk0dTfKv4",
+    "name": "Zinicola",
+    "slug": "zinicola",
+    "category": "italian-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–70",
+      "cuisine": "Italian",
+      "hours": "Opens 12 PM"
+    },
+    "dynamic": {
+      "address": "14835 Ballantyne Village Way #140",
+      "phone": null,
+      "rating": 4.6,
+      "userRatingsTotal": 1100,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 12,
+    "placeId": "ChIJ6wrqOumfVogRmv3SKVJG2QI",
+    "name": "Stagioni - Four Seasons of Food",
+    "slug": "stagioni-four-seasons-of-food",
+    "category": "italian-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$50–100",
+      "cuisine": "Italian",
+      "hours": "Opens 5 PM"
+    },
+    "dynamic": {
+      "address": "715 Providence Rd",
+      "phone": null,
+      "rating": 4.5,
+      "userRatingsTotal": 555,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 13,
+    "placeId": "ChIJzzp3yGefVogRHXkRiUMtt24",
+    "name": "Catalina Kitchen and Bar",
+    "slug": "catalina-kitchen-and-bar",
+    "category": "italian-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Restaurant",
+      "hours": "Opens 11:30 AM"
+    },
+    "dynamic": {
+      "address": "1942 E 7th St #106",
+      "phone": null,
+      "rating": 4.8,
+      "userRatingsTotal": 641,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 14,
+    "placeId": "ChIJZXBrCGWfVogRmtUetSBnwHQ",
+    "name": "L'Ostrica",
+    "slug": "l-ostrica",
+    "category": "italian-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$100+",
+      "cuisine": "Restaurant",
+      "hours": "Opens 11 AM Wed"
+    },
+    "dynamic": {
+      "address": "4701 Park Rd",
+      "phone": null,
+      "rating": 4.8,
+      "userRatingsTotal": 127,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 15,
+    "placeId": "ChIJw9KocSmgVogRa_j2UYnvjaM",
+    "name": "Dean's Italian Steakhouse",
+    "slug": "dean-s-italian-steakhouse",
+    "category": "italian-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "",
+      "cuisine": "Restaurant",
+      "hours": "Opens 6:30 AM"
+    },
+    "dynamic": {
+      "address": "128 E Brooklyn Vlg Ave",
+      "phone": null,
+      "rating": 4.9,
+      "userRatingsTotal": 11000,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 16,
+    "placeId": "ChIJZRAWHpqfVogRYbzr9SYWiWU",
+    "name": "Dolce Osteria",
+    "slug": "dolce-osteria",
+    "category": "italian-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–60",
+      "cuisine": "Italian",
+      "hours": "Opens 11:30 AM Wed"
+    },
+    "dynamic": {
+      "address": "1710 Kenilworth Ave",
+      "phone": null,
+      "rating": 4.4,
+      "userRatingsTotal": 589,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 17,
+    "placeId": "ChIJh7LOWFufVogRajS21okVhlg",
+    "name": "Leo's Italian Social",
+    "slug": "leo-s-italian-social",
+    "category": "italian-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Italian",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "4720 Piedmont Row Dr #150",
+      "phone": null,
+      "rating": 4.2,
+      "userRatingsTotal": 639,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 18,
+    "placeId": "ChIJaZnVMc0nVIgRWPRJuRuAl8k",
+    "name": "Via Roma",
+    "slug": "via-roma",
+    "category": "italian-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$100+",
+      "cuisine": "Italian",
+      "hours": "Opens 5 PM"
+    },
+    "dynamic": {
+      "address": "7416 Waverly Walk Ave Ste H-2",
+      "phone": null,
+      "rating": 4.4,
+      "userRatingsTotal": 335,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 19,
+    "placeId": "ChIJy2QJYueCVogR4OpF_3CB-2o",
+    "name": "OGGI Ristorante Italiano",
+    "slug": "oggi-ristorante-italiano",
+    "category": "italian-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "",
+      "cuisine": "Italian",
+      "hours": "Opens 4 PM"
+    },
+    "dynamic": {
+      "address": "16646 Hawfield Way Dr",
+      "phone": null,
+      "rating": 4.3,
+      "userRatingsTotal": 887,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 20,
+    "placeId": "ChIJg2T1KOgfVIgR7q87XNSrLco",
+    "name": "Ever Andalo",
+    "slug": "ever-andalo",
+    "category": "italian-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$50–100",
+      "cuisine": "Italian",
+      "hours": "Opens 5 PM"
+    },
+    "dynamic": {
+      "address": "3116 N Davidson St",
+      "phone": null,
+      "rating": 4.6,
+      "userRatingsTotal": 505,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 21,
+    "placeId": "ChIJD_2mbpEgVIgRKLe2wwgmYYY",
+    "name": "AQUA e VINO",
+    "slug": "aqua-e-vino",
+    "category": "italian-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$100+",
+      "cuisine": "Italian",
+      "hours": "Opens 12 PM"
+    },
+    "dynamic": {
+      "address": "4219 Providence Rd #3993",
+      "phone": null,
+      "rating": 4.5,
+      "userRatingsTotal": 329,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 22,
+    "placeId": "ChIJT_9PiTyeVogRxmtZMztAa-0",
+    "name": "Stella Nova Restaurant & Bar",
+    "slug": "stella-nova-restaurant-and-bar",
+    "category": "italian-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$30–40",
+      "cuisine": "Fusion restaurant",
+      "hours": "Opens 4 PM"
+    },
+    "dynamic": {
+      "address": "3920 Sharon Rd #160",
+      "phone": null,
+      "rating": 4.5,
+      "userRatingsTotal": 322,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 23,
+    "placeId": "ChIJ_9DojJ-fVogRNUqIP8WrC9I",
+    "name": "Fiamma Ristorante",
+    "slug": "fiamma-ristorante",
+    "category": "italian-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–70",
+      "cuisine": "Italian",
+      "hours": "Opens 5 PM"
+    },
+    "dynamic": {
+      "address": "2418 Park Rd",
+      "phone": null,
+      "rating": 4.4,
+      "userRatingsTotal": 576,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 24,
+    "placeId": "ChIJW29mgxedVogR-H-FBdzZK_U",
+    "name": "Buona Vita Restaurant and Bar",
+    "slug": "buona-vita-restaurant-and-bar",
+    "category": "italian-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$10–20",
+      "cuisine": "Italian",
+      "hours": "Opens 11:30 AM"
+    },
+    "dynamic": {
+      "address": "3419 Toringdon Way",
+      "phone": null,
+      "rating": 4.5,
+      "userRatingsTotal": 382,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 25,
+    "placeId": "ChIJ1_tJeT-eVogRCi3f3M4DBLA",
+    "name": "Toscana",
+    "slug": "toscana",
+    "category": "italian-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$50–100",
+      "cuisine": "Italian",
+      "hours": "Opens 11:30 AM"
+    },
+    "dynamic": {
+      "address": "6401 Carnegie Blvd #6a",
+      "phone": null,
+      "rating": 4.2,
+      "userRatingsTotal": 383,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 26,
+    "placeId": "ChIJQVLqFyWgVogRg91Gr3ReBNA",
+    "name": "Luce",
+    "slug": "luce",
+    "category": "italian-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$30–70",
+      "cuisine": "Italian",
+      "hours": "Opens 11:30 AM"
+    },
+    "dynamic": {
+      "address": "214 N Tryon St J",
+      "phone": null,
+      "rating": 4.4,
+      "userRatingsTotal": 666,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 27,
+    "placeId": "ChIJMaMPcyWgVogRcu7gWmymEvY",
+    "name": "Aria Tuscan Grill",
+    "slug": "aria-tuscan-grill",
+    "category": "italian-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–70",
+      "cuisine": "Italian",
+      "hours": "Opens 11:30 AM"
+    },
+    "dynamic": {
+      "address": "100 N Tryon St",
+      "phone": null,
+      "rating": 4.3,
+      "userRatingsTotal": 1100,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 28,
+    "placeId": "ChIJw2gFnBqfVogR0LTOuUfQ_r4",
+    "name": "Indaco",
+    "slug": "indaco",
+    "category": "italian-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "",
+      "cuisine": "Italian",
+      "hours": "Opens 4 PM"
+    },
+    "dynamic": {
+      "address": "2046 South Blvd",
+      "phone": null,
+      "rating": 4.3,
+      "userRatingsTotal": 599,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 29,
+    "placeId": "ChIJHd-KT9ChVogR3J0nw1oc0pg",
+    "name": "Open Kitchen",
+    "slug": "open-kitchen",
+    "category": "italian-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$10–20",
+      "cuisine": "Italian",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "1318 W Morehead St",
+      "phone": null,
+      "rating": 4.5,
+      "userRatingsTotal": 1800,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 30,
+    "placeId": "ChIJp9SqCQChVogRVtUtI6UBqZ0",
+    "name": "Aria",
+    "slug": "aria",
+    "category": "italian-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "",
+      "cuisine": "Italian",
+      "hours": ""
+    },
+    "dynamic": {
+      "address": "100 W Trade St",
+      "phone": null,
+      "rating": 5,
+      "userRatingsTotal": 1,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 31,
+    "placeId": "ChIJhyH6sBEnVIgRUmes5lfjPU0",
+    "name": "Portofino's Italian Restaurant Arboretum",
+    "slug": "portofino-s-italian-restaurant-arboretum",
+    "category": "italian-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$10–20",
+      "cuisine": "Italian",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "8128 Providence Rd",
+      "phone": null,
+      "rating": 4.4,
+      "userRatingsTotal": 959,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 32,
+    "placeId": "ChIJad7bdv-cVogRWh78UUcZLB4",
+    "name": "Trio",
+    "slug": "trio",
+    "category": "italian-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Restaurant",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "10709 McMullen Creek Pkwy",
+      "phone": null,
+      "rating": 4.5,
+      "userRatingsTotal": 1500,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 33,
+    "placeId": "ChIJbzHqL8wnVIgReNw_E1pRdgs",
+    "name": "Ilios Noche",
+    "slug": "ilios-noche",
+    "category": "italian-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–70",
+      "cuisine": "Italian",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "11508 Providence Rd",
+      "phone": null,
+      "rating": 4.5,
+      "userRatingsTotal": 1200,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 34,
+    "placeId": "ChIJ20julumfVogRGXlDSIB-zJY",
+    "name": "Zio Casual Italian",
+    "slug": "zio-casual-italian",
+    "category": "italian-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Italian",
+      "hours": "Opens 5 PM"
+    },
+    "dynamic": {
+      "address": "116 Middleton Dr",
+      "phone": null,
+      "rating": 4.5,
+      "userRatingsTotal": 424,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 35,
+    "placeId": "ChIJPYHlQFmeVogRBJJzoWAnLUE",
+    "name": "Portofino's Italian Restaurant Park Road",
+    "slug": "portofino-s-italian-restaurant-park-road",
+    "category": "italian-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Italian",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "5126 Park Rd",
+      "phone": null,
+      "rating": 4.5,
+      "userRatingsTotal": 1200,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 36,
+    "placeId": "ChIJGQxFIvAfVIgRAxNCYXhApL8",
+    "name": "Sorellina Pasta Co.",
+    "slug": "sorellina-pasta-co",
+    "category": "italian-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Pasta",
+      "hours": "Opens 11 AM Wed"
+    },
+    "dynamic": {
+      "address": "2341 The Plaza",
+      "phone": null,
+      "rating": 5,
+      "userRatingsTotal": 67,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 37,
+    "placeId": "ChIJSytBv8QrVIgRFT_dzhKTiZc",
+    "name": "Bistro D'Antonio",
+    "slug": "bistro-d-antonio",
+    "category": "italian-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Italian",
+      "hours": "Opens 4 PM"
+    },
+    "dynamic": {
+      "address": "Waxhaw, NC",
+      "phone": null,
+      "rating": 4.6,
+      "userRatingsTotal": 791,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 38,
+    "placeId": "ChIJn0ku9YAgVIgR5sSGpXbEC7o",
+    "name": "Mezzanotte Ristorante",
+    "slug": "mezzanotte-ristorante",
+    "category": "italian-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$30–50",
+      "cuisine": "Italian",
+      "hours": "Opens 4:30 PM"
+    },
+    "dynamic": {
+      "address": "2907 Providence Rd Ste 100",
+      "phone": null,
+      "rating": 4.2,
+      "userRatingsTotal": 275,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 39,
+    "placeId": "ChIJYUrdOlOeVogRQL9fd0fJXSA",
+    "name": "Flour Shop",
+    "slug": "flour-shop",
+    "category": "italian-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$30–90",
+      "cuisine": "New American",
+      "hours": "Opens 5 PM"
+    },
+    "dynamic": {
+      "address": "530 A Brandywine Rd",
+      "phone": null,
+      "rating": 4.3,
+      "userRatingsTotal": 483,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 40,
+    "placeId": "ChIJX_vwR7YnVIgRQNid4kTE0FY",
+    "name": "Arooji's Wine Room",
+    "slug": "arooji-s-wine-room",
+    "category": "italian-restaurants",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$30–50",
+      "cuisine": "Italian",
+      "hours": "Opens 4 PM"
+    },
+    "dynamic": {
+      "address": "5349 Ballantyne Commons Pkwy",
+      "phone": null,
+      "rating": 4.3,
+      "userRatingsTotal": 237,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  }
+]

@@ -1,0 +1,1082 @@
+[
+  {
+    "id": 1,
+    "placeId": "ChIJowWGCCidVogRM5bt_OVPr5w",
+    "name": "On The Roxx",
+    "slug": "on-the-roxx",
+    "category": "bars",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Cocktail bar",
+      "hours": ""
+    },
+    "dynamic": {
+      "address": "14021 Conlan Cir B6",
+      "phone": null,
+      "rating": 4.1,
+      "userRatingsTotal": 65,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 2,
+    "placeId": "ChIJmw8z0YyhVogR7nc2qpNUZKw",
+    "name": "Prohibition bar, Charlotte N.C",
+    "slug": "prohibition-bar-charlotte-n-c",
+    "category": "bars",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$10–60",
+      "cuisine": "Bar",
+      "hours": ""
+    },
+    "dynamic": {
+      "address": "200 N Tryon St",
+      "phone": null,
+      "rating": 4.7,
+      "userRatingsTotal": 328,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 3,
+    "placeId": "ChIJyZx0_OChVogRCRdin_oMdl8",
+    "name": "The Public House",
+    "slug": "the-public-house",
+    "category": "bars",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Bar",
+      "hours": ""
+    },
+    "dynamic": {
+      "address": "300 S Brevard St",
+      "phone": null,
+      "rating": 4.1,
+      "userRatingsTotal": 597,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 4,
+    "placeId": "ChIJZWsVESWgVogRFEG9BgK1eVA",
+    "name": "The Local",
+    "slug": "the-local",
+    "category": "bars",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$10–20",
+      "cuisine": "Bar",
+      "hours": ""
+    },
+    "dynamic": {
+      "address": "105 E 5th St",
+      "phone": null,
+      "rating": 4.3,
+      "userRatingsTotal": 685,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 5,
+    "placeId": "ChIJNcrZJgooVIgREKp4CrBerPE",
+    "name": "DB's Tavern",
+    "slug": "db-s-tavern",
+    "category": "bars",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$10–20",
+      "cuisine": "Grill",
+      "hours": ""
+    },
+    "dynamic": {
+      "address": "8155 Ardrey Kell Rd",
+      "phone": null,
+      "rating": 4.4,
+      "userRatingsTotal": 572,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 6,
+    "placeId": "ChIJl3dFmS-gVogRCHlJaF6MS2A",
+    "name": "Tilt on Trade",
+    "slug": "tilt-on-trade",
+    "category": "bars",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$10–20",
+      "cuisine": "Bar",
+      "hours": ""
+    },
+    "dynamic": {
+      "address": "127 W Trade St",
+      "phone": null,
+      "rating": 4.3,
+      "userRatingsTotal": 700,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 7,
+    "placeId": "ChIJfXBJOoqfVogRPeS2p_PjFVo",
+    "name": "Charlotte Beer Garden",
+    "slug": "charlotte-beer-garden",
+    "category": "bars",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Beer Garden",
+      "hours": ""
+    },
+    "dynamic": {
+      "address": "1300 S Tryon St",
+      "phone": null,
+      "rating": 4.4,
+      "userRatingsTotal": 1900,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 8,
+    "placeId": "ChIJc7MNwYGfVogRlheL4mrWukA",
+    "name": "The Union",
+    "slug": "the-union",
+    "category": "bars",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$10–20",
+      "cuisine": "Bar",
+      "hours": ""
+    },
+    "dynamic": {
+      "address": "222 E Bland St #200",
+      "phone": null,
+      "rating": 4.2,
+      "userRatingsTotal": 367,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 9,
+    "placeId": "ChIJ0RFJbL6fVogRioxz0PhdrQk",
+    "name": "Blue Door",
+    "slug": "blue-door",
+    "category": "bars",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Cocktail bar",
+      "hours": "Opens 5 PM Wed"
+    },
+    "dynamic": {
+      "address": "1508 S Mint St",
+      "phone": null,
+      "rating": 4.6,
+      "userRatingsTotal": 147,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 10,
+    "placeId": "ChIJExcwWVmeVogRZ12QmVoXu1Q",
+    "name": "Lucky Lou's Tavern",
+    "slug": "lucky-lou-s-tavern",
+    "category": "bars",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "",
+      "cuisine": "Grill",
+      "hours": ""
+    },
+    "dynamic": {
+      "address": "5124 Park Rd",
+      "phone": null,
+      "rating": 4.5,
+      "userRatingsTotal": 903,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 11,
+    "placeId": "ChIJx9P55l-hVogR3SFwsFRQzBQ",
+    "name": "Havana Smoke and Reserve",
+    "slug": "havana-smoke-and-reserve",
+    "category": "bars",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Bar",
+      "hours": ""
+    },
+    "dynamic": {
+      "address": "123 E 5th St Ste 400",
+      "phone": null,
+      "rating": 4.4,
+      "userRatingsTotal": 132,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 12,
+    "placeId": "ChIJwQ1MTP2hVogRbslBzhXc_yY",
+    "name": "The Royal Tot",
+    "slug": "the-royal-tot",
+    "category": "bars",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$10–30",
+      "cuisine": "Tiki bar",
+      "hours": "Opens 4:30 PM"
+    },
+    "dynamic": {
+      "address": "933 Louise Ave Ste 350",
+      "phone": null,
+      "rating": 4.1,
+      "userRatingsTotal": 936,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 13,
+    "placeId": "ChIJjZzvz6SfVogRWZvjoP9jwjw",
+    "name": "Sneak Clt",
+    "slug": "sneak-clt",
+    "category": "bars",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$10–60",
+      "cuisine": "Cocktail bar",
+      "hours": "Opens 5 PM"
+    },
+    "dynamic": {
+      "address": "2001 E 7th St F",
+      "phone": null,
+      "rating": 4.8,
+      "userRatingsTotal": 142,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 14,
+    "placeId": "ChIJ6a5WOZiDVogRXHgHmpQIMLg",
+    "name": "The Club House Bites and Booze",
+    "slug": "the-club-house-bites-and-booze",
+    "category": "bars",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$10–60",
+      "cuisine": "Sports bar",
+      "hours": "Opens 3 PM"
+    },
+    "dynamic": {
+      "address": "16715 Orchard Stone Run Ste 200",
+      "phone": null,
+      "rating": 4.5,
+      "userRatingsTotal": 377,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 15,
+    "placeId": "ChIJixq5ESWgVogRH-kQhWdTrGs",
+    "name": "Connolly's On Fifth",
+    "slug": "connolly-s-on-fifth",
+    "category": "bars",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$10–20",
+      "cuisine": "Irish pub",
+      "hours": ""
+    },
+    "dynamic": {
+      "address": "115 E 5th St",
+      "phone": null,
+      "rating": 4.6,
+      "userRatingsTotal": 632,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 16,
+    "placeId": "ChIJa4_8nQ2gVogRPE90d2Wg2Yc",
+    "name": "Super Abari Game Bar",
+    "slug": "super-abari-game-bar",
+    "category": "bars",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$10–20",
+      "cuisine": "Bar",
+      "hours": ""
+    },
+    "dynamic": {
+      "address": "1015 Seigle Ave",
+      "phone": null,
+      "rating": 4.7,
+      "userRatingsTotal": 1800,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 17,
+    "placeId": "ChIJ_4Hm7SGgVogRNoZBXcKQn74",
+    "name": "Infused Charlotte",
+    "slug": "infused-charlotte",
+    "category": "bars",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Hookah bar",
+      "hours": ""
+    },
+    "dynamic": {
+      "address": "312 N Myers St #109",
+      "phone": null,
+      "rating": 4.3,
+      "userRatingsTotal": 336,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 18,
+    "placeId": "ChIJ_a8w9wCgVogRhdrmAKNizwg",
+    "name": "Thomas Street Tavern",
+    "slug": "thomas-street-tavern",
+    "category": "bars",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$10–20",
+      "cuisine": "Grill",
+      "hours": ""
+    },
+    "dynamic": {
+      "address": "1218 Thomas Ave",
+      "phone": null,
+      "rating": 4.4,
+      "userRatingsTotal": 1900,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 19,
+    "placeId": "ChIJxdKlYTyfVogRzHOrjQwHMjI",
+    "name": "Johnny Dollars",
+    "slug": "johnny-dollars",
+    "category": "bars",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$10–20",
+      "cuisine": "Bar",
+      "hours": ""
+    },
+    "dynamic": {
+      "address": "3920 S Tryon St",
+      "phone": null,
+      "rating": 4.2,
+      "userRatingsTotal": 207,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 20,
+    "placeId": "ChIJN0zRDACfVogRzdi_HrCjLCU",
+    "name": "The Loft at Duckworth's",
+    "slug": "the-loft-at-duckworth-s",
+    "category": "bars",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–70",
+      "cuisine": "Cocktail bar",
+      "hours": "Opens 4 PM Thu"
+    },
+    "dynamic": {
+      "address": "4625 Piedmont Row Dr Unit 115A",
+      "phone": null,
+      "rating": 4.6,
+      "userRatingsTotal": 39,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 21,
+    "placeId": "ChIJy9NRSiWgVogRQDRztUvZgng",
+    "name": "The Daily",
+    "slug": "the-daily",
+    "category": "bars",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Bar",
+      "hours": ""
+    },
+    "dynamic": {
+      "address": "214 N Church St",
+      "phone": null,
+      "rating": 4.5,
+      "userRatingsTotal": 357,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 22,
+    "placeId": "ChIJT6HzRcUfVIgR9TxLTL7c3Sg",
+    "name": "Belfast Mill Irish Pub",
+    "slug": "belfast-mill-irish-pub",
+    "category": "bars",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$10–20",
+      "cuisine": "Irish pub",
+      "hours": ""
+    },
+    "dynamic": {
+      "address": "144 Brevard Court Ste a",
+      "phone": null,
+      "rating": 4.5,
+      "userRatingsTotal": 329,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 23,
+    "placeId": "ChIJtxY4iACgVogRcynvqRlDq9U",
+    "name": "Whiskey Warehouse",
+    "slug": "whiskey-warehouse",
+    "category": "bars",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Bar",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "1221 The Plaza",
+      "phone": null,
+      "rating": 4.2,
+      "userRatingsTotal": 2100,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 24,
+    "placeId": "ChIJYROxpZ-fVogR7whzlFxm3tM",
+    "name": "Comet Grill",
+    "slug": "comet-grill",
+    "category": "bars",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$10–20",
+      "cuisine": "Bar",
+      "hours": ""
+    },
+    "dynamic": {
+      "address": "2224 Park Rd",
+      "phone": null,
+      "rating": 4.6,
+      "userRatingsTotal": 698,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 25,
+    "placeId": "ChIJ3QBwOTCgVogRN5NvJr5A5Ik",
+    "name": "The Conspiracy",
+    "slug": "the-conspiracy",
+    "category": "bars",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Cocktail bar",
+      "hours": "Opens 4 PM"
+    },
+    "dynamic": {
+      "address": "412 W 5th St C120",
+      "phone": null,
+      "rating": 4.8,
+      "userRatingsTotal": 251,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 26,
+    "placeId": "ChIJ9aL4KDIfVIgRvjUhjdJUC74",
+    "name": "Idlewild",
+    "slug": "idlewild",
+    "category": "bars",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–50",
+      "cuisine": "Cocktail bar",
+      "hours": ""
+    },
+    "dynamic": {
+      "address": "424 E 36th St Unit 2",
+      "phone": null,
+      "rating": 4.7,
+      "userRatingsTotal": 545,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 27,
+    "placeId": "ChIJ2T-H4yafVogRCtsr480sC-Q",
+    "name": "The Peace Pipe",
+    "slug": "the-peace-pipe",
+    "category": "bars",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$30–40",
+      "cuisine": "Hookah bar",
+      "hours": ""
+    },
+    "dynamic": {
+      "address": "204 W Woodlawn Rd H",
+      "phone": null,
+      "rating": 4.6,
+      "userRatingsTotal": 524,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 28,
+    "placeId": "ChIJCdinaFefVogRbnddiCRgU94",
+    "name": "Canopy Cocktails & Garden",
+    "slug": "canopy-cocktails-and-garden",
+    "category": "bars",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Bar",
+      "hours": "Opens 5 PM Wed"
+    },
+    "dynamic": {
+      "address": "118 E Kingston Ave Ste 110",
+      "phone": null,
+      "rating": 4.5,
+      "userRatingsTotal": 221,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 29,
+    "placeId": "ChIJbRjD5S6gVogR8lIwwCd1VYs",
+    "name": "Merchant and Trade",
+    "slug": "merchant-and-trade",
+    "category": "bars",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–70",
+      "cuisine": "Bar",
+      "hours": "Opens 4:30 PM"
+    },
+    "dynamic": {
+      "address": "303 S Church St",
+      "phone": null,
+      "rating": 4.2,
+      "userRatingsTotal": 1300,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 30,
+    "placeId": "ChIJ-6Y6jImfVogRUSttG0QXt8g",
+    "name": "City Lights Rooftop",
+    "slug": "city-lights-rooftop",
+    "category": "bars",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Cocktail bar",
+      "hours": "Opens 5 PM Wed"
+    },
+    "dynamic": {
+      "address": "555 S McDowell St",
+      "phone": null,
+      "rating": 4.2,
+      "userRatingsTotal": 489,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 31,
+    "placeId": "ChIJP6PUQlmdVogROUD2Fm6Pcqg",
+    "name": "Nora Mac's",
+    "slug": "nora-mac-s",
+    "category": "bars",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Irish pub",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "11318 N Community House Rd #200",
+      "phone": null,
+      "rating": 4.7,
+      "userRatingsTotal": 404,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 32,
+    "placeId": "ChIJhViggu6dVogRoa8MhmdydiM",
+    "name": "The Office Craft Bar & Kitchen",
+    "slug": "the-office-craft-bar-and-kitchen",
+    "category": "bars",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$10–20",
+      "cuisine": "Bar",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "7804 Rea Rd",
+      "phone": null,
+      "rating": 4.6,
+      "userRatingsTotal": 507,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 33,
+    "placeId": "ChIJ65JQYJKfVogRaC934TS1vGo",
+    "name": "Monday Night Brewing - Garden Co.",
+    "slug": "monday-night-brewing-garden-co",
+    "category": "bars",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "",
+      "cuisine": "Brewery",
+      "hours": "Opens 12 PM"
+    },
+    "dynamic": {
+      "address": "2217 S Tryon St",
+      "phone": null,
+      "rating": 4.6,
+      "userRatingsTotal": 438,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 34,
+    "placeId": "ChIJH7Kh9yidVogRak_EFEBXOR8",
+    "name": "Blackfinn Ameripub Ballantyne",
+    "slug": "blackfinn-ameripub-ballantyne",
+    "category": "bars",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$10–20",
+      "cuisine": "Bar",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "14825 Ballantyne Village Way #100",
+      "phone": null,
+      "rating": 4.3,
+      "userRatingsTotal": 1500,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 35,
+    "placeId": "ChIJ49_m01mdVogRF5WgKfE1_wY",
+    "name": "Bradshaw Social House",
+    "slug": "bradshaw-social-house",
+    "category": "bars",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Grill",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "8440 Rea Rd",
+      "phone": null,
+      "rating": 4.3,
+      "userRatingsTotal": 1100,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 36,
+    "placeId": "ChIJPRcYTDCgVogR8GtNLay9Vnw",
+    "name": "Crave Dessert Bar",
+    "slug": "crave-dessert-bar",
+    "category": "bars",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–70",
+      "cuisine": "Lounge bar",
+      "hours": "Opens 5 PM"
+    },
+    "dynamic": {
+      "address": "500 W 5th St Unit 120",
+      "phone": null,
+      "rating": 4.3,
+      "userRatingsTotal": 3000,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 37,
+    "placeId": "ChIJ2ZPIuS2gVogR4YuAOixBchU",
+    "name": "Graham St. Pub & Patio",
+    "slug": "graham-st-pub-and-patio",
+    "category": "bars",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$10–50",
+      "cuisine": "Bar",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "400 S Graham St #4",
+      "phone": null,
+      "rating": 4.3,
+      "userRatingsTotal": 849,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 38,
+    "placeId": "ChIJEfsGub-hVogRGIMbacD-G_M",
+    "name": "Nuvole Rooftop TwentyTwo",
+    "slug": "nuvole-rooftop-twentytwo",
+    "category": "bars",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–80",
+      "cuisine": "Lounge bar",
+      "hours": "Opens 4 PM"
+    },
+    "dynamic": {
+      "address": "220 E Trade St Ste 2200",
+      "phone": null,
+      "rating": 4.3,
+      "userRatingsTotal": 1100,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 39,
+    "placeId": "ChIJ--lMAvOdVogRSdNKQovR0PQ",
+    "name": "Carolina Steel Sports Bar",
+    "slug": "carolina-steel-sports-bar",
+    "category": "bars",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$20–30",
+      "cuisine": "Sports bar",
+      "hours": "Opens 11 AM"
+    },
+    "dynamic": {
+      "address": "12206 Copper Way #124",
+      "phone": null,
+      "rating": 4.7,
+      "userRatingsTotal": 544,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  },
+  {
+    "id": 40,
+    "placeId": "ChIJRaPxw1OeVogRw8ass8ldD-U",
+    "name": "Moosehead Grill",
+    "slug": "moosehead-grill",
+    "category": "bars",
+    "description": "",
+    "tags": [],
+    "featured": false,
+    "reviews": [],
+    "images": [],
+    "custom": {
+      "price": "$10–20",
+      "cuisine": "Grill",
+      "hours": ""
+    },
+    "dynamic": {
+      "address": "1807 Montford Dr",
+      "phone": null,
+      "rating": 4.6,
+      "userRatingsTotal": 1700,
+      "website": null,
+      "mapsUrl": null,
+      "businessStatus": null,
+      "lastUpdated": null
+    }
+  }
+]
