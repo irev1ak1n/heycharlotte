@@ -86,19 +86,13 @@ body.is-loading{
             #ffffff 100%),
             var(--loader-img);
     background-size:300% 300%, cover;
-    background-position:120% 120%, center;
+    background-position:50% 50%, center;
     background-repeat:repeat, no-repeat;
     -webkit-background-clip:text;
     background-clip:text;
     -webkit-text-fill-color:transparent;
     color:transparent;
     filter:drop-shadow(0 0 26px rgba(140,165,255,.25)) drop-shadow(0 6px 30px rgba(0,0,0,.5));
-    animation:loaderImgWave 5s linear infinite;
-}
-
-@keyframes loaderImgWave{
-    from{ background-position:120% 120%, center; }
-    to{ background-position:-60% -60%, center; }
 }
 
 .loader-bar{
@@ -133,8 +127,4 @@ body.is-loading{
     text-transform:uppercase;
     color:rgba(255,255,255,.62);
     text-shadow:0 2px 14px rgba(0,0,0,.6);
-}
-
-@media (prefers-reduced-motion: reduce){
-    .loader-title{ animation:none; background-position:50% 50%, center; }
 }
