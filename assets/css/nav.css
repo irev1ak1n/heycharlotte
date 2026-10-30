@@ -190,49 +190,60 @@
 
 .nav-logo__title.is-lettered{
     --logo-grad: linear-gradient(90deg,
-    #ffffff 0%, #ffffff 34%,
-    #55C7FF 40%, #A66BFF 48%, #FF5C91 56%,
-    #ffffff 62%, #ffffff 100%);
-    --drift: 16s;
+    #ffffff 0%, #ffffff 16%,
+    #55C7FF 27%, #A66BFF 45%, #FF5C91 63%,
+    #ffffff 74%, #ffffff 100%);
+    --logo-core: rgba(255,255,255,.42);
+    --tile: 560px;
+    --drift: 14s;
     --lo: .86;
-    --glo: .3;
-    --ghi: .95;
-    --glow-blur: 7px;
-    --glow-opacity: .9;
+    --glo: .42;
+    --ghi: 1;
+    --glow-blur: 5px;
+    --glow-opacity: 1;
 }
 
 .nav-logo__sub.is-lettered{
     --logo-grad: linear-gradient(90deg,
-    #ffffff 0%, #ffffff 34%,
-    #99ddff 40%, #caa6ff 48%, #ff9dbd 56%,
-    #ffffff 62%, #ffffff 100%);
-    --drift: 24s;
+    #ffffff 0%, #ffffff 16%,
+    #99ddff 27%, #caa6ff 45%, #ff9dbd 63%,
+    #ffffff 74%, #ffffff 100%);
+    --logo-core: rgba(255,255,255,.3);
+    --tile: 560px;
+    --drift: 22s;
     --lo: .93;
-    --glo: .18;
-    --ghi: .6;
+    --glo: .22;
+    --ghi: .65;
     --glow-blur: 5px;
-    --glow-opacity: .7;
+    --glow-opacity: .8;
 }
 
 .logo-face{
     position: relative;
 }
 
-.logo-glow{
+.logo-glow,
+.logo-bloom{
+    --logo-core: transparent;
     position: absolute;
     left: 0;
     top: 0;
     pointer-events: none;
-    filter: blur(var(--glow-blur));
+}
+
+.logo-glow{
     opacity: var(--glow-opacity);
 }
 
+.logo-bloom{
+    opacity: .75;
+}
+
 .logo-ltr{
-    --tile: 720px;
-    background-image: var(--logo-grad);
-    background-size: var(--tile) 100%;
-    background-repeat: repeat-x;
-    background-position-x: calc(var(--x, 0px) * -1);
+    background-image: linear-gradient(180deg, transparent 6%, var(--logo-core) 48%, transparent 94%), var(--logo-grad);
+    background-size: 100% 100%, var(--tile) 100%;
+    background-repeat: no-repeat, repeat-x;
+    background-position-x: 0, calc(var(--x, 0px) * -1);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -244,14 +255,23 @@
                logoBreathe var(--bd, 6s) ease-in-out var(--bo, 0s) infinite;
 }
 
-.logo-glow .logo-ltr{
-    animation: logoDrift var(--drift) linear infinite,
+.logo-glow .logo-ltr,
+.logo-bloom .logo-ltr{
+    animation: logoDrift var(--drift) steps(60) var(--dd, 0s) infinite,
                logoGlow var(--gd, 10s) ease-in-out var(--go, 0s) infinite;
 }
 
+.logo-glow .logo-ltr{
+    filter: blur(var(--glow-blur)) saturate(1.35);
+}
+
+.logo-bloom .logo-ltr{
+    filter: blur(15px) saturate(1.5);
+}
+
 @keyframes logoDrift{
-    from{ background-position-x: calc(var(--x, 0px) * -1 - var(--tile)); }
-    to{ background-position-x: calc(var(--x, 0px) * -1); }
+    from{ background-position-x: 0, calc(var(--x, 0px) * -1 - var(--tile)); }
+    to{ background-position-x: 0, calc(var(--x, 0px) * -1); }
 }
 
 @keyframes logoBreathe{
@@ -564,12 +584,14 @@
     .nav-logo__title.is-lettered .logo-ltr,
     .nav-logo__sub.is-lettered .logo-ltr{
         animation: none;
-        background-position-x: calc(var(--x, 0px) * -1 - 235px);
+        background-position-x: 0, calc(var(--x, 0px) * -1 - 150px);
     }
-    .nav-logo__title.is-lettered .logo-glow{ opacity: .6; }
+    .nav-logo__title.is-lettered .logo-bloom{ opacity: .5; }
+    .nav-logo__title.is-lettered .logo-glow{ opacity: .7; }
     .nav-logo__sub.is-lettered .logo-glow{ opacity: .4; }
     .nav-logo__title.is-lettered .logo-glow .logo-ltr,
-    .nav-logo__sub.is-lettered .logo-glow .logo-ltr{ opacity: .55; }
+    .nav-logo__title.is-lettered .logo-bloom .logo-ltr,
+    .nav-logo__sub.is-lettered .logo-glow .logo-ltr{ opacity: .6; }
     .nav-search{ animation: none; }
 }
 

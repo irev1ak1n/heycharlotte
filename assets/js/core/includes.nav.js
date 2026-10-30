@@ -516,6 +516,7 @@
             const text = el.textContent;
             const isSub = el.classList.contains("nav-logo__sub");
             const glow = buildLayer(text, "logo-glow");
+            const bloom = isSub ? null : buildLayer(text, "logo-bloom");
             const face = buildLayer(text, "logo-face");
 
             Array.from(face.querySelectorAll(".logo-ltr")).forEach((span, i) => {
@@ -524,13 +525,17 @@
                 span.style.setProperty("--bd", bd.toFixed(2) + "s");
                 span.style.setProperty("--bo", (-rand(0, bd)).toFixed(2) + "s");
                 const g = glow.querySelectorAll(".logo-ltr")[i];
-                if (g) {
-                    g.style.setProperty("--gd", gd.toFixed(2) + "s");
-                    g.style.setProperty("--go", (-rand(0, gd)).toFixed(2) + "s");
-                }
+                const go = (-rand(0, gd)).toFixed(2) + "s";
+                [g, bloom && bloom.querySelectorAll(".logo-ltr")[i]].forEach((layerLetter) => {
+                    if (!layerLetter) return;
+                    layerLetter.style.setProperty("--gd", gd.toFixed(2) + "s");
+                    layerLetter.style.setProperty("--go", go);
+                    layerLetter.style.setProperty("--dd", (-rand(0, isSub ? 0.35 : 0.22)).toFixed(3) + "s");
+                });
             });
 
             el.textContent = "";
+            if (bloom) el.appendChild(bloom);
             el.appendChild(glow);
             el.appendChild(face);
             el.classList.add("is-lettered");
@@ -540,13 +545,16 @@
             targets.forEach((el) => {
                 const face = el.querySelector(".logo-face");
                 const glow = el.querySelector(".logo-glow");
+                const bloom = el.querySelector(".logo-bloom");
                 if (!face || !glow) return;
                 const base = el.getBoundingClientRect().left;
                 const glowLetters = glow.querySelectorAll(".logo-ltr");
+                const bloomLetters = bloom ? bloom.querySelectorAll(".logo-ltr") : [];
                 face.querySelectorAll(".logo-ltr").forEach((span, i) => {
                     const x = (span.getBoundingClientRect().left - base).toFixed(1) + "px";
                     span.style.setProperty("--x", x);
                     if (glowLetters[i]) glowLetters[i].style.setProperty("--x", x);
+                    if (bloomLetters[i]) bloomLetters[i].style.setProperty("--x", x);
                 });
             });
         };
