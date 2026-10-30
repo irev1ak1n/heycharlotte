@@ -13,7 +13,7 @@
     var muted = true;
     var paused = false;
 
-    var RATE = 0.8;
+    var RATE = 0.9;
     var CROSSFADE = 2.0;
     var FADE_MS = CROSSFADE / RATE * 1000;
     var transitioning = false;
