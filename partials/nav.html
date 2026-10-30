@@ -100,6 +100,23 @@
                 </div>
             </div>
 
+
+            <div class="nav-theme-card">
+                <button class="nav-theme-card__btn" id="navThemeCard" type="button" data-theme-toggle aria-label="Switch to light theme" aria-pressed="false">
+                    <span class="nav-theme-card__icon" aria-hidden="true">
+                        <svg class="nav-theme-icon nav-theme-icon--moon" viewBox="0 0 24 24">
+                            <path d="M20 14.5A8 8 0 0 1 9.5 4a7 7 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+                        <svg class="nav-theme-icon nav-theme-icon--sun" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 2.5v2.6M12 18.9v2.6M4.2 4.2l1.9 1.9M17.9 17.9l1.9 1.9M2.5 12h2.6M18.9 12h2.6M4.2 19.8l1.9-1.9M17.9 6.1l1.9-1.9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </span>
+                    <span class="nav-theme-card__text" data-theme-text>Dark mode</span>
+                    <span class="nav-theme-card__switch" aria-hidden="true"></span>
+                </button>
+            </div>
+
         </nav>
 
         <div class="nav-actions">
@@ -120,7 +137,7 @@
             </div>
         </div>
 
-        <button class="nav-theme" id="navTheme" type="button" aria-label="Switch to light theme" aria-pressed="false">
+        <button class="nav-theme" id="navTheme" type="button" data-theme-toggle aria-label="Switch to light theme" aria-pressed="false">
             <svg class="nav-theme-icon nav-theme-icon--moon" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M20 14.5A8 8 0 0 1 9.5 4a7 7 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
             </svg>
