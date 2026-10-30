@@ -162,12 +162,12 @@
 
 .nav-logo__title.is-lettered{
     --glow-blur: 4px;
-    --glow-peak: 1;
+    --glow-peak: .72;
 }
 
 .nav-logo__sub.is-lettered{
     --glow-blur: 3px;
-    --glow-peak: .55;
+    --glow-peak: .3;
 }
 
 .logo-face{
@@ -187,12 +187,12 @@
     opacity: 0;
     filter: blur(var(--glow-blur));
     text-shadow: 0 0 calc(var(--glow-blur) * 2) currentColor;
-    animation: logoGlow var(--gd, 12s) ease-in-out var(--go, 0s) infinite;
+    transition: opacity var(--fade, 1.4s) cubic-bezier(.45,.05,.35,1);
 }
 
-@keyframes logoGlow{
-    0%, 46%, 100%{ opacity: 0; }
-    72%{ opacity: var(--glow-peak); }
+.logo-glow .logo-ltr.is-lit{
+    opacity: var(--glow-peak);
+}
 }
 
 .nav-logo:hover{
@@ -489,8 +489,8 @@
     .nav-search input,
     .nav-burger span,
     .nav-scrim{ transition: none; }
-    .nav-logo__title.is-lettered .logo-glow .logo-ltr,
-    .nav-logo__sub.is-lettered .logo-glow .logo-ltr{ animation: none; opacity: calc(var(--glow-peak) * .45); }
+    .logo-glow .logo-ltr{ transition: none; }
+    .logo-glow .logo-ltr:nth-child(4n+2){ opacity: calc(var(--glow-peak) * .6); }
     .nav-search{ animation: none; }
 }
 

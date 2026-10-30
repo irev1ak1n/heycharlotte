@@ -492,8 +492,7 @@
         const targets = Array.from(navMount.querySelectorAll(".nav-logo__title, .nav-logo__sub"));
         if (!targets.length) return;
 
-        const rand = (min, max) => min + Math.random() * (max - min);
-        const accents = ["#55C7FF", "#A66BFF", "#FF5C91"];
+        const reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
 
         const buildLayer = (text, className) => {
             const layer = document.createElement("span");
@@ -519,22 +518,70 @@
             const glow = buildLayer(text, "logo-glow");
             const face = buildLayer(text, "logo-face");
 
-            let last = -1;
-            glow.querySelectorAll(".logo-ltr").forEach((span) => {
-                let c;
-                do { c = Math.floor(Math.random() * accents.length); } while (c === last);
-                last = c;
-                const gd = isSub ? rand(13, 22) : rand(9, 17);
-                span.style.setProperty("--gc", accents[c]);
-                span.style.setProperty("--gd", gd.toFixed(2) + "s");
-                span.style.setProperty("--go", (-rand(0, gd)).toFixed(2) + "s");
-            });
-
             el.textContent = "";
             el.appendChild(glow);
             el.appendChild(face);
             el.classList.add("is-lettered");
+            if (!reduce.matches) schedulePulses(glow, isSub);
         });
+    }
+
+    function schedulePulses(glow, isSub) {
+        const letters = Array.from(glow.querySelectorAll(".logo-ltr"));
+        if (letters.length < 4) return;
+        const accents = ["#55C7FF", "#A66BFF", "#FF5C91"];
+        const rand = (min, max) => min + Math.random() * (max - min);
+        const k = isSub ? 1.5 : 1;
+        let lastColor = -1;
+        let recent = [];
+
+        const light = (i, delay, fade, hold) => {
+            const span = letters[i];
+            if (!span) return;
+            let c;
+            do { c = Math.floor(Math.random() * accents.length); } while (c === lastColor);
+            lastColor = c;
+            setTimeout(() => {
+                span.style.color = accents[c];
+                span.style.setProperty("--fade", fade.toFixed(2) + "s");
+                span.classList.add("is-lit");
+                setTimeout(() => {
+                    span.style.setProperty("--fade", (fade * rand(1.1, 1.5)).toFixed(2) + "s");
+                    span.classList.remove("is-lit");
+                }, hold * 1000);
+            }, delay * 1000);
+        };
+
+        const pick = () => {
+            let i;
+            do { i = Math.floor(Math.random() * letters.length); } while (recent.includes(i));
+            recent = [...recent.slice(-4), i];
+            return i;
+        };
+
+        const next = () => {
+            if (!document.hidden) {
+                const r = Math.random();
+                const fade = rand(1, 1.8) * k;
+                const hold = rand(0.3, 0.9);
+                const a = pick();
+                if (r < 0.45) {
+                    light(a, 0, fade, hold);
+                } else if (r < 0.8) {
+                    const b = a + (a < letters.length - 1 && Math.random() < 0.7 ? 1 : -1);
+                    light(a, 0, fade, hold);
+                    light(b, rand(0.45, 0.9), rand(1, 1.8) * k, hold);
+                } else {
+                    let b = pick();
+                    if (Math.abs(a - b) < 3) b = (a + Math.floor(letters.length / 2)) % letters.length;
+                    light(a, 0, fade, hold);
+                    light(b, rand(0, 0.5), rand(1, 1.8) * k, hold);
+                }
+            }
+            setTimeout(next, rand(2.4, 5.2) * k * 1000);
+        };
+
+        setTimeout(next, rand(0.6, 2) * 1000);
     }
 
     function setNavThemeByHero() {
