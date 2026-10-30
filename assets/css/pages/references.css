@@ -38,7 +38,7 @@
 
 .ref-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 22px;
 }
 
@@ -48,6 +48,8 @@
     border-radius: 18px;
     padding: 18px;
     box-shadow: 0 14px 36px rgba(16,24,40,.08);
+    min-width: 0;
+    overflow-wrap: anywhere;
 }
 
 .ref-wide{ grid-column: 1 / -1; }
@@ -82,7 +84,7 @@
 
 .ref-cols{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 16px;
 }
 
@@ -104,7 +106,7 @@
 
 .ref-links{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
 }
 
@@ -131,7 +133,8 @@
 
 .ref-download{
     display:inline-block;
-    margin-top:12px;
+    padding:11px 0;
+    margin-top:1px;
     font-weight:600;
     color:#3f5669;
     text-decoration:none;
@@ -141,9 +144,9 @@
 }
 
 @media (max-width: 980px){
-    .ref-grid{ grid-template-columns: 1fr; }
-    .ref-cols{ grid-template-columns: 1fr; }
-    .ref-links{ grid-template-columns: 1fr; }
+    .ref-grid{ grid-template-columns: minmax(0, 1fr); }
+    .ref-cols{ grid-template-columns: minmax(0, 1fr); }
+    .ref-links{ grid-template-columns: minmax(0, 1fr); }
     .ref-embed{ height: 440px; }
 }
 
@@ -155,7 +158,7 @@
 
 .ref-project-grid{
     display: grid;
-    grid-template-columns: 2fr .8fr;
+    grid-template-columns: minmax(0, 2fr) minmax(0, .8fr);
     gap: 10px;
     align-items: start;
 }
@@ -169,10 +172,35 @@
     justify-content: center;
 }
 
+.tsa-badge{
+    width: min(100%, 280px);
+    text-align: center;
+    color: #0b1220;
+}
+
+.tsa-badge-top,
+.tsa-badge-bottom{
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.tsa-badge-logo{
+    margin: 10px 0;
+}
+
+.tsa-badge-logo img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
+}
+
 /* Responsive */
 @media (max-width: 900px){
     .ref-project-grid{
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
         gap: 24px;
         text-align: center;
     }

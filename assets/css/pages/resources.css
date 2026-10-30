@@ -425,6 +425,16 @@ body{
     .rx-hero{ padding:70px 0 34px; }
 }
 
+@media (max-width: 960px){
+    .rx-search input,
+    .rx-sort select{ font-size:16px; }
+}
+
+@media (pointer: coarse){
+    .rx-chip{ min-height:44px; }
+    .rx-card-link{ min-height:44px; }
+}
+
 @media (max-width: 640px){
     .rx-grid{ grid-template-columns:1fr; }
     .rx-sort{ width:100%; justify-content:space-between; }

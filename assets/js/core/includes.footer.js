@@ -18,6 +18,7 @@
         if (yearEl) yearEl.textContent = new Date().getFullYear();
 
         wireFooterTopicLinks(footerMount, base);
+        initFooterAccordion(footerMount);
 
         if (inPages) {
             footerMount
@@ -27,6 +28,54 @@
                     el.setAttribute(attr, "../" + el.getAttribute(attr));
                 });
         }
+    }
+
+    function initFooterAccordion(footerMount) {
+        const list = footerMount.querySelector(".footer-links");
+        if (!list) return;
+
+        const cols = Array.from(list.querySelectorAll(".hub-col"));
+        const mq = window.matchMedia("(max-width: 620px)");
+
+        function setOpen(col, open) {
+            const head = col.querySelector(".nyc-col-head");
+            col.classList.toggle("is-open", open);
+            if (head) head.setAttribute("aria-expanded", open ? "true" : "false");
+        }
+
+        function apply() {
+            list.classList.toggle("is-accordion", mq.matches);
+            cols.forEach((col) => {
+                const head = col.querySelector(".nyc-col-head");
+                if (!head) return;
+                if (mq.matches) {
+                    head.setAttribute("role", "button");
+                    head.setAttribute("tabindex", "0");
+                    setOpen(col, col.classList.contains("is-open"));
+                } else {
+                    head.removeAttribute("role");
+                    head.removeAttribute("tabindex");
+                    head.removeAttribute("aria-expanded");
+                    col.classList.remove("is-open");
+                }
+            });
+        }
+
+        cols.forEach((col) => {
+            const head = col.querySelector(".nyc-col-head");
+            if (!head) return;
+            head.addEventListener("click", () => {
+                if (mq.matches) setOpen(col, !col.classList.contains("is-open"));
+            });
+            head.addEventListener("keydown", (e) => {
+                if (!mq.matches || (e.key !== "Enter" && e.key !== " ")) return;
+                e.preventDefault();
+                setOpen(col, !col.classList.contains("is-open"));
+            });
+        });
+
+        mq.addEventListener("change", apply);
+        apply();
     }
 
     function wireFooterTopicLinks(footerMount, base) {

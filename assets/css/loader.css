@@ -62,7 +62,7 @@ body.is-loading{
     position:relative;
     z-index:2;
     font-family:"Bebas Neue", "Archivo Black", system-ui, sans-serif;
-    font-size:clamp(56px, 11vw, 150px);
+    font-size:clamp(min(56px, 15vw), 11vw, 150px);
     font-weight:700;
     letter-spacing:.08em;
     line-height:1;
@@ -122,6 +122,10 @@ body.is-loading{
     text-transform:uppercase;
     color:rgba(255,255,255,.62);
     text-shadow:0 2px 14px rgba(0,0,0,.6);
+}
+
+@media (max-width: 360px){
+    .loader-status{ font-size:11px; letter-spacing:.3em; text-indent:.3em; }
 }
 
 @media (prefers-reduced-motion: reduce){

@@ -287,11 +287,58 @@
     .footer-links{
         grid-template-columns: repeat(2, 1fr);
     }
+    .footer-contact input,
+    .footer-contact textarea{
+        font-size: 16px;
+    }
+}
+
+@media (pointer: coarse){
+    .hub-col a{ min-width: 44px; padding: 12px 0; }
+    .hub-col a::before{ bottom: 6px; }
 }
 
 @media (max-width: 620px){
+    .hub-card{
+        margin: 32px auto;
+        padding: 32px 22px 30px;
+    }
     .footer-links{
         grid-template-columns: 1fr;
         gap: 26px;
+    }
+    .footer-links.is-accordion{
+        gap: 0;
+        border-bottom: 1px solid rgba(255,255,255,.12);
+    }
+    .footer-links.is-accordion .hub-col{
+        border-top: 1px solid rgba(255,255,255,.12);
+    }
+    .footer-links.is-accordion .nyc-col-head{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 52px;
+        margin-bottom: 0;
+        cursor: pointer;
+    }
+    .footer-links.is-accordion .nyc-col-head::after{
+        content: "";
+        width: 8px;
+        height: 8px;
+        margin-right: 4px;
+        border-right: 2px solid currentColor;
+        border-bottom: 2px solid currentColor;
+        transform: rotate(45deg);
+        transition: transform .2s ease;
+    }
+    .footer-links.is-accordion .hub-col.is-open .nyc-col-head::after{
+        transform: rotate(-135deg);
+    }
+    .footer-links.is-accordion .hub-col:not(.is-open) a{
+        display: none;
+    }
+    .footer-links.is-accordion .hub-col.is-open{
+        padding-bottom: 10px;
     }
 }

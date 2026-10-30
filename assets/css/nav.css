@@ -9,6 +9,7 @@
     background: rgba(0,0,0,.22);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(255,255,255,.10);
+    overflow-x: clip;
     transition: padding .2s ease, background .2s ease;
 }
 
@@ -121,6 +122,8 @@
     text-decoration: none;
     transition: transform .2s ease;
 }
+
+.nav-logo--bar{ display: none; }
 
 .nav-logo__title{
     font-family: "Bebas Neue", "Bree Serif", system-ui, sans-serif;
@@ -466,6 +469,10 @@
     .nav-search{ animation: none; }
 }
 
+@media (pointer: coarse){
+    .nav-link{ min-height: 44px; }
+}
+
 @media (max-width: 1180px){
     .hero-top .container.top-row{ gap: 12px; padding: 8px 16px; }
     .nav{ gap: 14px; padding: 10px 16px; }
@@ -481,9 +488,13 @@
 
     .nav-burger{ display: flex; order: 1; visibility: visible; pointer-events: auto; }
 
-    .nav-logo{ order: 2; margin: 0 auto; }
+    .nav-logo--bar{ display: flex; order: 2; margin: 0 auto; }
 
     .nav-search{ order: 3; }
+
+    .nav-theme{ order: 4; }
+
+    .nav-search input{ font-size: 16px; }
 
     .nav{
         order: 4;
@@ -526,7 +537,7 @@
     }
 
     .nav-side--left{ order: 1; }
-    .nav-logo{ display: none; }
+    .nav .nav-logo{ display: none; }
     .nav-side--right{ order: 2; }
 
     .nav-item{ flex-direction: column; align-items: stretch; }
@@ -589,6 +600,12 @@
 }
 
 @media (max-width: 620px){
+    .hero-top .container.top-row{ width: calc(100% - 24px); gap: 6px; padding: 8px 0; }
+
+    .nav-logo--bar{ padding: 2px 4px; min-height: 44px; justify-content: center; }
+    .nav-logo--bar .nav-logo__title{ font-size: clamp(17px, 5.6vw, 24px); }
+    .nav-logo--bar .nav-logo__sub{ font-size: 10px; letter-spacing: .18em; }
+
     .nav-search.open{
         position: absolute;
         left: 16px;
