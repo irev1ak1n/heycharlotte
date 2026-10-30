@@ -493,6 +493,7 @@
         if (!targets.length) return;
 
         const rand = (min, max) => min + Math.random() * (max - min);
+        const accents = ["#55C7FF", "#A66BFF", "#FF5C91"];
 
         const buildLayer = (text, className) => {
             const layer = document.createElement("span");
@@ -516,63 +517,24 @@
             const text = el.textContent;
             const isSub = el.classList.contains("nav-logo__sub");
             const glow = buildLayer(text, "logo-glow");
-            const bloom = isSub ? null : buildLayer(text, "logo-bloom");
             const face = buildLayer(text, "logo-face");
 
-            Array.from(face.querySelectorAll(".logo-ltr")).forEach((span, i) => {
-                const bd = isSub ? rand(7, 11) : rand(4.5, 8.5);
-                const gd = isSub ? rand(10, 18) : rand(7, 15);
-                span.style.setProperty("--bd", bd.toFixed(2) + "s");
-                span.style.setProperty("--bo", (-rand(0, bd)).toFixed(2) + "s");
-                const g = glow.querySelectorAll(".logo-ltr")[i];
-                const go = (-rand(0, gd)).toFixed(2) + "s";
-                [g, bloom && bloom.querySelectorAll(".logo-ltr")[i]].forEach((layerLetter) => {
-                    if (!layerLetter) return;
-                    layerLetter.style.setProperty("--gd", gd.toFixed(2) + "s");
-                    layerLetter.style.setProperty("--go", go);
-                    layerLetter.style.setProperty("--dd", (-rand(0, isSub ? 0.35 : 0.22)).toFixed(3) + "s");
-                });
+            let last = -1;
+            glow.querySelectorAll(".logo-ltr").forEach((span) => {
+                let c;
+                do { c = Math.floor(Math.random() * accents.length); } while (c === last);
+                last = c;
+                const gd = isSub ? rand(13, 22) : rand(9, 17);
+                span.style.setProperty("--gc", accents[c]);
+                span.style.setProperty("--gd", gd.toFixed(2) + "s");
+                span.style.setProperty("--go", (-rand(0, gd)).toFixed(2) + "s");
             });
 
             el.textContent = "";
-            if (bloom) el.appendChild(bloom);
             el.appendChild(glow);
             el.appendChild(face);
             el.classList.add("is-lettered");
         });
-
-        const measure = () => {
-            targets.forEach((el) => {
-                const face = el.querySelector(".logo-face");
-                const glow = el.querySelector(".logo-glow");
-                const bloom = el.querySelector(".logo-bloom");
-                if (!face || !glow) return;
-                const base = el.getBoundingClientRect().left;
-                const glowLetters = glow.querySelectorAll(".logo-ltr");
-                const bloomLetters = bloom ? bloom.querySelectorAll(".logo-ltr") : [];
-                face.querySelectorAll(".logo-ltr").forEach((span, i) => {
-                    const x = (span.getBoundingClientRect().left - base).toFixed(1) + "px";
-                    span.style.setProperty("--x", x);
-                    if (glowLetters[i]) glowLetters[i].style.setProperty("--x", x);
-                    if (bloomLetters[i]) bloomLetters[i].style.setProperty("--x", x);
-                });
-            });
-        };
-
-        let queued = false;
-        const queueMeasure = () => {
-            if (queued) return;
-            queued = true;
-            requestAnimationFrame(() => {
-                queued = false;
-                measure();
-            });
-        };
-
-        measure();
-        if (document.fonts && document.fonts.ready) document.fonts.ready.then(queueMeasure);
-        window.addEventListener("resize", queueMeasure);
-        window.addEventListener("load", queueMeasure);
     }
 
     function setNavThemeByHero() {

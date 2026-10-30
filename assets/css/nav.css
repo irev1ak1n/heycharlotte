@@ -137,18 +137,8 @@
     line-height: 1;
     text-transform: uppercase;
     white-space: nowrap;
-    background: linear-gradient(90deg,
-    #ffffff 0%, #ffffff 36%,
-    #55C7FF 41%, #A66BFF 49.5%, #FF5C91 58%,
-    #ffffff 64%, #ffffff 100%);
-    background-size: 300% 100%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-    -webkit-text-stroke: .4px rgba(255,255,255,.28);
-    filter: drop-shadow(0 0 16px rgba(120,150,255,.3));
-    animation: navBrandWave 8s ease-in-out infinite;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(166,107,255,.28);
 }
 
 .nav-logo__sub{
@@ -160,129 +150,49 @@
     text-transform: uppercase;
     white-space: nowrap;
     text-indent: .3em;
-    background: linear-gradient(90deg,
-    #ffffff 0%, #ffffff 36%,
-    #99ddff 41%, #caa6ff 49.5%, #ff9dbd 58%,
-    #ffffff 64%, #ffffff 100%);
-    background-size: 300% 100%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-    filter: drop-shadow(0 0 8px rgba(150,175,255,.16));
-    animation: navBrandWave 8s ease-in-out infinite;
-    animation-delay: .7s;
-}
-
-@keyframes navBrandWave{
-    0%{ background-position: 100% 0; }
-    45%, 100%{ background-position: 0% 0; }
+    color: #fff;
+    text-shadow: 0 0 8px rgba(85,199,255,.18);
 }
 
 .nav-logo__title.is-lettered,
 .nav-logo__sub.is-lettered{
     position: relative;
-    background: none;
-    animation: none;
-    filter: none;
-    -webkit-text-stroke: 0;
+    text-shadow: none;
 }
 
 .nav-logo__title.is-lettered{
-    --logo-grad: linear-gradient(90deg,
-    #ffffff 0%, #ffffff 16%,
-    #55C7FF 27%, #A66BFF 45%, #FF5C91 63%,
-    #ffffff 74%, #ffffff 100%);
-    --logo-core: rgba(255,255,255,.42);
-    --tile: 560px;
-    --drift: 14s;
-    --lo: .86;
-    --glo: .42;
-    --ghi: 1;
-    --glow-blur: 5px;
-    --glow-opacity: 1;
+    --glow-blur: 4px;
+    --glow-peak: 1;
 }
 
 .nav-logo__sub.is-lettered{
-    --logo-grad: linear-gradient(90deg,
-    #ffffff 0%, #ffffff 16%,
-    #99ddff 27%, #caa6ff 45%, #ff9dbd 63%,
-    #ffffff 74%, #ffffff 100%);
-    --logo-core: rgba(255,255,255,.3);
-    --tile: 560px;
-    --drift: 22s;
-    --lo: .93;
-    --glo: .22;
-    --ghi: .65;
-    --glow-blur: 5px;
-    --glow-opacity: .8;
+    --glow-blur: 3px;
+    --glow-peak: .55;
 }
 
 .logo-face{
     position: relative;
+    color: #fff;
 }
 
-.logo-glow,
-.logo-bloom{
-    --logo-core: transparent;
+.logo-glow{
     position: absolute;
     left: 0;
     top: 0;
     pointer-events: none;
 }
 
-.logo-glow{
-    opacity: var(--glow-opacity);
-}
-
-.logo-bloom{
-    opacity: .75;
-}
-
-.logo-ltr{
-    background-image: linear-gradient(180deg, transparent 6%, var(--logo-core) 48%, transparent 94%), var(--logo-grad);
-    background-size: 100% 100%, var(--tile) 100%;
-    background-repeat: no-repeat, repeat-x;
-    background-position-x: 0, calc(var(--x, 0px) * -1);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-}
-
-.logo-face .logo-ltr{
-    animation: logoDrift var(--drift) linear infinite,
-               logoBreathe var(--bd, 6s) ease-in-out var(--bo, 0s) infinite;
-}
-
-.logo-glow .logo-ltr,
-.logo-bloom .logo-ltr{
-    animation: logoDrift var(--drift) steps(60) var(--dd, 0s) infinite,
-               logoGlow var(--gd, 10s) ease-in-out var(--go, 0s) infinite;
-}
-
 .logo-glow .logo-ltr{
-    filter: blur(var(--glow-blur)) saturate(1.35);
-}
-
-.logo-bloom .logo-ltr{
-    filter: blur(15px) saturate(1.5);
-}
-
-@keyframes logoDrift{
-    from{ background-position-x: 0, calc(var(--x, 0px) * -1 - var(--tile)); }
-    to{ background-position-x: 0, calc(var(--x, 0px) * -1); }
-}
-
-@keyframes logoBreathe{
-    0%, 100%{ opacity: var(--lo); }
-    50%{ opacity: 1; }
+    color: var(--gc, #55C7FF);
+    opacity: 0;
+    filter: blur(var(--glow-blur));
+    text-shadow: 0 0 calc(var(--glow-blur) * 2) currentColor;
+    animation: logoGlow var(--gd, 12s) ease-in-out var(--go, 0s) infinite;
 }
 
 @keyframes logoGlow{
-    0%, 58%, 100%{ opacity: var(--glo); }
-    72%{ opacity: var(--ghi); }
-    86%{ opacity: var(--glo); }
+    0%, 46%, 100%{ opacity: 0; }
+    72%{ opacity: var(--glow-peak); }
 }
 
 .nav-logo:hover{
@@ -579,19 +489,8 @@
     .nav-search input,
     .nav-burger span,
     .nav-scrim{ transition: none; }
-    .nav-logo__title,
-    .nav-logo__sub{ animation: none; background-position: 0% 0; }
-    .nav-logo__title.is-lettered .logo-ltr,
-    .nav-logo__sub.is-lettered .logo-ltr{
-        animation: none;
-        background-position-x: 0, calc(var(--x, 0px) * -1 - 150px);
-    }
-    .nav-logo__title.is-lettered .logo-bloom{ opacity: .5; }
-    .nav-logo__title.is-lettered .logo-glow{ opacity: .7; }
-    .nav-logo__sub.is-lettered .logo-glow{ opacity: .4; }
     .nav-logo__title.is-lettered .logo-glow .logo-ltr,
-    .nav-logo__title.is-lettered .logo-bloom .logo-ltr,
-    .nav-logo__sub.is-lettered .logo-glow .logo-ltr{ opacity: .6; }
+    .nav-logo__sub.is-lettered .logo-glow .logo-ltr{ animation: none; opacity: calc(var(--glow-peak) * .45); }
     .nav-search{ animation: none; }
 }
 
