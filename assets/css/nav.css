@@ -125,6 +125,8 @@
 
 .nav-logo--bar{ display: none; }
 
+.nav-actions{ display: contents; }
+
 .nav-logo__title{
     font-family: "Bebas Neue", "Bree Serif", system-ui, sans-serif;
     font-size: 30px;
@@ -489,11 +491,23 @@
 }
 
 @media (max-width: 960px){
-    .hero-top .container.top-row{ justify-content: space-between; }
+    .hero-top .container.top-row{
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+    }
 
-    .nav-burger{ display: flex; order: 1; visibility: visible; pointer-events: auto; }
+    .nav-burger{ display: flex; order: 1; justify-self: start; visibility: visible; pointer-events: auto; }
 
-    .nav-logo--bar{ display: flex; order: 2; margin: 0 auto; }
+    .nav-logo--bar{ display: flex; order: 2; margin: 0; justify-self: center; }
+
+    .nav-actions{
+        display: flex;
+        align-items: center;
+        order: 3;
+        justify-self: end;
+        gap: 12px;
+    }
 
     .nav-search{ order: 3; }
 
@@ -567,8 +581,9 @@
     .nav-link{
         justify-content: space-between;
         width: 100%;
-        padding: 13px 14px;
-        font-size: 13px;
+        padding: 15px 14px;
+        font-size: 16px;
+        color: #f2f5fa;
         border-radius: 12px;
     }
 
@@ -594,7 +609,7 @@
 
     .nav-dd::before{ display: none; }
 
-    .nav-dd a{ padding: 10px 14px; font-size: 13.5px; }
+    .nav-dd a{ padding: 11px 14px; font-size: 15.5px; color: rgba(255,255,255,.92); }
 
     .nav-sub-menu{
         position: static;
@@ -617,12 +632,13 @@
         height: auto;
     }
 
-    .nav-sub-trigger{ font-size: 13.5px; padding: 10px 14px; }
-    .nav-sub-menu a{ font-size: 13px; }
+    .nav-sub-trigger{ font-size: 15.5px; padding: 11px 14px; color: rgba(255,255,255,.92); }
+    .nav-sub-menu a{ font-size: 14.5px; color: rgba(255,255,255,.85); }
 }
 
 @media (max-width: 620px){
     .hero-top .container.top-row{ width: calc(100% - 24px); gap: 6px; padding: 8px 0; }
+    .nav-actions{ gap: 6px; }
 
     .nav-logo--bar{ padding: 2px 4px; min-height: 44px; justify-content: center; }
     .nav-logo--bar .nav-logo__title{ font-size: clamp(17px, 5.6vw, 24px); }
@@ -638,6 +654,17 @@
         height: 46px;
         z-index: 30;
     }
+}
+
+@media (max-width: 360px){
+    .nav-burger,
+    .nav-actions .nav-theme,
+    .nav-actions .nav-search:not(.open),
+    .nav-actions .nav-search:not(.open) .nav-search-toggle{ width: 42px; height: 42px; }
+
+    .nav-actions{ gap: 4px; }
+
+    .nav-logo--bar .nav-logo__title{ font-size: 16px; letter-spacing: .1em; }
 }
 
 .nav-theme{
