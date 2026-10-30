@@ -526,11 +526,11 @@
         margin: 0;
         padding: 14px 14px 28px;
         border-radius: 0 20px 20px 0;
-        background: rgba(14,10,22,.94);
-        border: 1px solid rgba(255,255,255,.12);
+        background: rgba(0,0,0,.42);
+        border: 1px solid rgba(255,255,255,.10);
         border-left: 0;
         box-shadow: 0 24px 60px rgba(0,0,0,.5);
-        backdrop-filter: blur(16px);
+        backdrop-filter: blur(12px);
         overflow-y: auto;
         overscroll-behavior: contain;
         -webkit-overflow-scrolling: touch;
