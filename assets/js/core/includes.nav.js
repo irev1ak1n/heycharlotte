@@ -488,6 +488,85 @@
         mq.addEventListener("change", () => closeMenu());
     }
 
+    function initLogoLetters(navMount) {
+        const targets = Array.from(navMount.querySelectorAll(".nav-logo__title, .nav-logo__sub"));
+        if (!targets.length) return;
+
+        const rand = (min, max) => min + Math.random() * (max - min);
+
+        const buildLayer = (text, className) => {
+            const layer = document.createElement("span");
+            layer.className = className;
+            layer.setAttribute("aria-hidden", "true");
+            Array.from(text).forEach((ch) => {
+                if (ch === " ") {
+                    layer.appendChild(document.createTextNode(" "));
+                    return;
+                }
+                const span = document.createElement("span");
+                span.className = "logo-ltr";
+                span.textContent = ch;
+                layer.appendChild(span);
+            });
+            return layer;
+        };
+
+        targets.forEach((el) => {
+            if (el.classList.contains("is-lettered")) return;
+            const text = el.textContent;
+            const isSub = el.classList.contains("nav-logo__sub");
+            const glow = buildLayer(text, "logo-glow");
+            const face = buildLayer(text, "logo-face");
+
+            Array.from(face.querySelectorAll(".logo-ltr")).forEach((span, i) => {
+                const bd = isSub ? rand(7, 11) : rand(4.5, 8.5);
+                const gd = isSub ? rand(10, 18) : rand(7, 15);
+                span.style.setProperty("--bd", bd.toFixed(2) + "s");
+                span.style.setProperty("--bo", (-rand(0, bd)).toFixed(2) + "s");
+                const g = glow.querySelectorAll(".logo-ltr")[i];
+                if (g) {
+                    g.style.setProperty("--gd", gd.toFixed(2) + "s");
+                    g.style.setProperty("--go", (-rand(0, gd)).toFixed(2) + "s");
+                }
+            });
+
+            el.textContent = "";
+            el.appendChild(glow);
+            el.appendChild(face);
+            el.classList.add("is-lettered");
+        });
+
+        const measure = () => {
+            targets.forEach((el) => {
+                const face = el.querySelector(".logo-face");
+                const glow = el.querySelector(".logo-glow");
+                if (!face || !glow) return;
+                const base = el.getBoundingClientRect().left;
+                const glowLetters = glow.querySelectorAll(".logo-ltr");
+                face.querySelectorAll(".logo-ltr").forEach((span, i) => {
+                    const x = (span.getBoundingClientRect().left - base).toFixed(1) + "px";
+                    span.style.setProperty("--x", x);
+                    if (glowLetters[i]) glowLetters[i].style.setProperty("--x", x);
+                });
+            });
+        };
+
+        let queued = false;
+        const queueMeasure = () => {
+            if (queued) return;
+            queued = true;
+            requestAnimationFrame(() => {
+                queued = false;
+                measure();
+            });
+        };
+
+        measure();
+        if (document.fonts && document.fonts.ready) document.fonts.ready.then(queueMeasure);
+        window.addEventListener("resize", queueMeasure);
+        window.addEventListener("load", queueMeasure);
+    }
+
     function setNavThemeByHero() {
         const hero = document.querySelector(".hero");
         const heroVisible = hero && getComputedStyle(hero).display !== "none";
@@ -523,6 +602,7 @@
         initNavScroll();
         initDropdowns(navMount);
         initNavMenu(navMount);
+        initLogoLetters(navMount);
     }
 
     injectNav().catch(console.error);

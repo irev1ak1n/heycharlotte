@@ -179,6 +179,92 @@
     45%, 100%{ background-position: 0% 0; }
 }
 
+.nav-logo__title.is-lettered,
+.nav-logo__sub.is-lettered{
+    position: relative;
+    background: none;
+    animation: none;
+    filter: none;
+    -webkit-text-stroke: 0;
+}
+
+.nav-logo__title.is-lettered{
+    --logo-grad: linear-gradient(90deg,
+    #ffffff 0%, #ffffff 34%,
+    #55C7FF 40%, #A66BFF 48%, #FF5C91 56%,
+    #ffffff 62%, #ffffff 100%);
+    --drift: 16s;
+    --lo: .86;
+    --glo: .3;
+    --ghi: .95;
+    --glow-blur: 7px;
+    --glow-opacity: .9;
+}
+
+.nav-logo__sub.is-lettered{
+    --logo-grad: linear-gradient(90deg,
+    #ffffff 0%, #ffffff 34%,
+    #99ddff 40%, #caa6ff 48%, #ff9dbd 56%,
+    #ffffff 62%, #ffffff 100%);
+    --drift: 24s;
+    --lo: .93;
+    --glo: .18;
+    --ghi: .6;
+    --glow-blur: 5px;
+    --glow-opacity: .7;
+}
+
+.logo-face{
+    position: relative;
+}
+
+.logo-glow{
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    filter: blur(var(--glow-blur));
+    opacity: var(--glow-opacity);
+}
+
+.logo-ltr{
+    --tile: 720px;
+    background-image: var(--logo-grad);
+    background-size: var(--tile) 100%;
+    background-repeat: repeat-x;
+    background-position-x: calc(var(--x, 0px) * -1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.logo-face .logo-ltr{
+    animation: logoDrift var(--drift) linear infinite,
+               logoBreathe var(--bd, 6s) ease-in-out var(--bo, 0s) infinite;
+}
+
+.logo-glow .logo-ltr{
+    animation: logoDrift var(--drift) linear infinite,
+               logoGlow var(--gd, 10s) ease-in-out var(--go, 0s) infinite;
+}
+
+@keyframes logoDrift{
+    from{ background-position-x: calc(var(--x, 0px) * -1 - var(--tile)); }
+    to{ background-position-x: calc(var(--x, 0px) * -1); }
+}
+
+@keyframes logoBreathe{
+    0%, 100%{ opacity: var(--lo); }
+    50%{ opacity: 1; }
+}
+
+@keyframes logoGlow{
+    0%, 58%, 100%{ opacity: var(--glo); }
+    72%{ opacity: var(--ghi); }
+    86%{ opacity: var(--glo); }
+}
+
 .nav-logo:hover{
     transform: translateY(-1px);
 }
@@ -475,6 +561,15 @@
     .nav-scrim{ transition: none; }
     .nav-logo__title,
     .nav-logo__sub{ animation: none; background-position: 0% 0; }
+    .nav-logo__title.is-lettered .logo-ltr,
+    .nav-logo__sub.is-lettered .logo-ltr{
+        animation: none;
+        background-position-x: calc(var(--x, 0px) * -1 - 235px);
+    }
+    .nav-logo__title.is-lettered .logo-glow{ opacity: .6; }
+    .nav-logo__sub.is-lettered .logo-glow{ opacity: .4; }
+    .nav-logo__title.is-lettered .logo-glow .logo-ltr,
+    .nav-logo__sub.is-lettered .logo-glow .logo-ltr{ opacity: .55; }
     .nav-search{ animation: none; }
 }
 
