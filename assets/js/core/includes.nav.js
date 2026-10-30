@@ -417,7 +417,11 @@
         const nav = navMount.querySelector(".nav");
         const burger = navMount.querySelector("#navBurger");
         const scrim = navMount.querySelector("#navScrim");
+        const topBar = navMount.querySelector(".hero-top");
         if (!nav || !burger) return;
+
+        const root = document.documentElement;
+        const mq = window.matchMedia("(max-width: 960px)");
 
         const collapseDropdowns = () => {
             nav.querySelectorAll(".nav-item.open").forEach((item) => {
@@ -427,25 +431,37 @@
             });
         };
 
-        const closeMenu = () => {
+        const syncTop = () => {
+            if (!topBar) return;
+            root.style.setProperty("--nav-top", Math.round(topBar.getBoundingClientRect().bottom) + "px");
+        };
+
+        const blockPageTouch = (e) => {
+            if (!nav.contains(e.target)) e.preventDefault();
+        };
+
+        const closeMenu = (restoreFocus = false) => {
+            const wasOpen = nav.classList.contains("open");
             nav.classList.remove("open");
             burger.classList.remove("open");
             burger.setAttribute("aria-expanded", "false");
-            if (scrim) {
-                scrim.classList.remove("show");
-                scrim.hidden = true;
-            }
+            burger.setAttribute("aria-label", "Open menu");
+            if (scrim) scrim.classList.remove("show");
+            root.classList.remove("nav-lock");
+            document.removeEventListener("touchmove", blockPageTouch);
             collapseDropdowns();
+            if (wasOpen && restoreFocus === true) burger.focus();
         };
 
         const openMenu = () => {
+            syncTop();
             nav.classList.add("open");
             burger.classList.add("open");
             burger.setAttribute("aria-expanded", "true");
-            if (scrim) {
-                scrim.hidden = false;
-                requestAnimationFrame(() => scrim.classList.add("show"));
-            }
+            burger.setAttribute("aria-label", "Close menu");
+            if (scrim) scrim.classList.add("show");
+            root.classList.add("nav-lock");
+            document.addEventListener("touchmove", blockPageTouch, { passive: false });
         };
 
         burger.addEventListener("click", () => {
@@ -453,19 +469,23 @@
             else openMenu();
         });
 
-        if (scrim) scrim.addEventListener("click", closeMenu);
+        if (scrim) scrim.addEventListener("click", () => closeMenu());
 
         nav.querySelectorAll("a[href]").forEach((a) => {
             a.addEventListener("click", () => {
-                if (window.matchMedia("(max-width: 960px)").matches) closeMenu();
+                if (mq.matches) closeMenu();
             });
         });
 
         document.addEventListener("keydown", (e) => {
-            if (e.key === "Escape" && nav.classList.contains("open")) closeMenu();
+            if (e.key === "Escape" && nav.classList.contains("open")) closeMenu(true);
         });
 
-        window.matchMedia("(max-width: 960px)").addEventListener("change", closeMenu);
+        window.addEventListener("resize", () => {
+            if (nav.classList.contains("open")) syncTop();
+        });
+
+        mq.addEventListener("change", () => closeMenu());
     }
 
     function setNavThemeByHero() {
