@@ -138,17 +138,17 @@
     text-transform: uppercase;
     white-space: nowrap;
     background: linear-gradient(90deg,
-    #ffffff 0%, #ffffff 38%,
-    #3fd0e0 45%, #5aa9ff 49%, #a855f7 53%, #ff5f9e 57%, #ff8a3d 61%,
-    #ffffff 68%, #ffffff 100%);
+    #ffffff 0%, #ffffff 36%,
+    #a8c8ff 42%, #b9a6ee 50%, #a8c8ff 58%,
+    #ffffff 64%, #ffffff 100%);
     background-size: 300% 100%;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
     -webkit-text-stroke: .4px rgba(255,255,255,.28);
-    filter: drop-shadow(0 0 20px rgba(140,165,255,.45));
-    animation: navBrandWave 9s linear infinite;
+    filter: drop-shadow(0 0 18px rgba(150,175,255,.28));
+    animation: navBrandWave 8s ease-in-out infinite;
 }
 
 .nav-logo__sub{
@@ -161,22 +161,22 @@
     white-space: nowrap;
     text-indent: .3em;
     background: linear-gradient(90deg,
-    #ffffff 0%, #ffffff 38%,
-    #3fd0e0 45%, #5aa9ff 49%, #a855f7 53%, #ff5f9e 57%, #ff8a3d 61%,
-    #ffffff 68%, #ffffff 100%);
+    #ffffff 0%, #ffffff 36%,
+    #dce7ff 42%, #d4c9f1 50%, #dce7ff 58%,
+    #ffffff 64%, #ffffff 100%);
     background-size: 300% 100%;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
-    filter: drop-shadow(0 0 10px rgba(120,150,255,.26));
-    animation: navBrandWave 9s linear infinite;
-    animation-delay: -4s;
+    filter: drop-shadow(0 0 8px rgba(150,175,255,.16));
+    animation: navBrandWave 8s ease-in-out infinite;
+    animation-delay: .7s;
 }
 
 @keyframes navBrandWave{
-    from{ background-position: 100% 0; }
-    to{ background-position: 0% 0; }
+    0%{ background-position: 100% 0; }
+    45%, 100%{ background-position: 0% 0; }
 }
 
 .nav-logo:hover{
@@ -474,7 +474,7 @@
     .nav-burger span,
     .nav-scrim{ transition: none; }
     .nav-logo__title,
-    .nav-logo__sub{ animation: none; background-position: 50% 0; }
+    .nav-logo__sub{ animation: none; background-position: 0% 0; }
     .nav-search{ animation: none; }
 }
 
@@ -499,12 +499,14 @@
 
     .nav-logo--bar{
         display: flex;
-        position: absolute;
-        inset: 0;
-        margin: auto;
-        width: fit-content;
-        height: fit-content;
+        justify-content: center;
+        min-height: 44px;
+        margin: 0 auto 0 0;
+        padding: 2px 0;
     }
+
+    .nav-logo--bar .nav-logo__title{ font-size: clamp(22px, 7.6vw, 30px); }
+    .nav-logo--bar .nav-logo__sub{ font-size: clamp(10.5px, 3vw, 12px); letter-spacing: .2em; }
 
     .nav-actions{
         display: flex;
@@ -534,7 +536,8 @@
         order: 4;
         position: fixed;
         top: var(--nav-top, 99px);
-        left: 0;
+        left: auto;
+        right: 0;
         bottom: 0;
         width: min(84vw, 420px);
         flex-direction: column;
@@ -543,17 +546,17 @@
         gap: 4px;
         margin: 0;
         padding: 14px 14px 28px;
-        border-radius: 0 20px 20px 0;
+        border-radius: 20px 0 0 20px;
         background: rgba(0,0,0,.42);
         border: 1px solid rgba(255,255,255,.10);
-        border-left: 0;
+        border-right: 0;
         box-shadow: 0 24px 60px rgba(0,0,0,.5);
         backdrop-filter: blur(12px);
         overflow-y: auto;
         overscroll-behavior: contain;
         -webkit-overflow-scrolling: touch;
         visibility: hidden;
-        transform: translateX(-100%);
+        transform: translateX(100%);
         transition: transform .35s cubic-bezier(.22,.8,.26,1), visibility 0s linear .35s;
     }
 
@@ -710,10 +713,6 @@
     .hero-top .container.top-row{ width: calc(100% - 24px); gap: 6px; padding: 8px 0; }
     .nav-actions{ gap: 6px; }
 
-    .nav-logo--bar{ padding: 2px 4px; min-height: 44px; justify-content: center; }
-    .nav-logo--bar .nav-logo__title{ font-size: clamp(17px, 5.6vw, 24px); }
-    .nav-logo--bar .nav-logo__sub{ font-size: 10px; letter-spacing: .18em; }
-
     .nav-search.open{
         position: absolute;
         left: 16px;
@@ -735,8 +734,6 @@
 
     .nav-actions{ gap: 4px; }
 
-    .nav-logo--bar .nav-logo__title{ font-size: 15px; letter-spacing: .1em; }
-    .nav-logo--bar .nav-logo__sub{ font-size: 9.5px; letter-spacing: .14em; }
 }
 
 .nav-theme{

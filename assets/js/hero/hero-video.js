@@ -13,10 +13,16 @@
     var muted = true;
     var paused = false;
 
+    var RATE = 0.8;
     var CROSSFADE = 2.0;
+    var FADE_MS = CROSSFADE / RATE * 1000;
     var transitioning = false;
 
-    buffers.forEach(function(v){ v.loop = false; v.muted = true; v.volume = 1; });
+    buffers.forEach(function(v){
+        v.loop = false; v.muted = true; v.volume = 1;
+        v.defaultPlaybackRate = RATE;
+        v.playbackRate = RATE;
+    });
 
     function current(){ return buffers[activeBuf]; }
 
@@ -41,12 +47,14 @@
     function loadInto(bufIdx, url){
         var v = buffers[bufIdx];
         v.src = url;
+        v.defaultPlaybackRate = RATE;
         v.load();
+        v.playbackRate = RATE;
     }
 
     function rampAudio(fromV, toV){
         var start = performance.now();
-        var dur = CROSSFADE * 1000;
+        var dur = FADE_MS;
         function step(now){
             var t = Math.min(1, (now - start) / dur);
             try{ fromV.volume = Math.max(0, 1 - t); }catch(e){}
@@ -70,6 +78,7 @@
         try{ incoming.currentTime = 0; }catch(e){}
         incoming.muted = muted;
         incoming.volume = 0;
+        incoming.playbackRate = RATE;
         incoming.classList.add('is-active');
         outgoing.classList.remove('is-active');
 
@@ -85,7 +94,7 @@
             outgoing.volume = 1;
             loadInto(outgoingIdx, playlist[afterIndex]);
             transitioning = false;
-        }, CROSSFADE * 1000 + 80);
+        }, FADE_MS + 80);
     }
 
     buffers.forEach(function(v, i){
