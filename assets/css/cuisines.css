@@ -1,7 +1,7 @@
 .cuisines{
     position:relative;
     background:#000000;
-    padding:120px 0 130px;
+    padding:84px 0 92px;
     overflow:hidden;
     color:#fff;
 }
@@ -12,7 +12,7 @@
 }
 
 .cuisines-head{
-    margin-bottom:60px;
+    margin-bottom:44px;
 }
 
 .cuisines-eyebrow{
@@ -245,7 +245,7 @@
 }
 
 @media (max-width: 920px){
-    .cuisines{ padding:84px 0 92px; }
+    .cuisines{ padding:60px 0 64px; }
     .cuisines-stack{
         flex-wrap:wrap;
         gap:16px;

@@ -1,7 +1,7 @@
 .things{
     position:relative;
     background:#000000;
-    padding:110px 0 120px;
+    padding:70px 0 84px;
     overflow:hidden;
     color:#fff;
 }
@@ -235,7 +235,7 @@
 }
 
 @media (max-width: 980px){
-    .things{ padding:80px 0 90px; }
+    .things{ padding:56px 0 63px; }
     .things-inner{ width:min(92%, 1280px); }
     .things-grid{
         grid-template-columns:1fr 1fr;

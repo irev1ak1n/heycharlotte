@@ -518,7 +518,7 @@
 .services{
     position:relative;
     background:#000000;
-    padding:60px 0 100px;
+    padding:60px 0 60px;
     overflow:hidden;
     color:#fff;
 }
@@ -686,7 +686,7 @@
 }
 
 @media (max-width: 720px){
-    .services{ padding:44px 0 70px; }
+    .services{ padding:44px 0 44px; }
     .services-grid{ grid-template-columns:1fr 1fr; gap:16px; }
     .service-card{ aspect-ratio:3/4; }
     .service-card:nth-child(5){ display:block; }
